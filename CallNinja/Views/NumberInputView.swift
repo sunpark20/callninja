@@ -29,7 +29,7 @@ struct NumberInputView: View {
         NavigationStack {
             VStack(spacing: 24) {
                 VStack(spacing: 8) {
-                    Text("스팸 전화에서 본 번호를\n그대로 입력하세요")
+                    Text("numberInput.instruction")
                         .font(.headline)
                         .multilineTextAlignment(.center)
 
@@ -39,7 +39,7 @@ struct NumberInputView: View {
                 }
                 .padding(.top)
 
-                TextField("전화번호 입력", text: $phoneNumber)
+                TextField(String(localized: "numberInput.placeholder"), text: $phoneNumber)
                     .keyboardType(.phonePad)
                     .font(.title2.monospaced())
                     .multilineTextAlignment(.center)
@@ -57,7 +57,7 @@ struct NumberInputView: View {
                         onConfirm(result, phoneNumber)
                     }
                 } label: {
-                    Text("확인")
+                    Text("numberInput.confirm")
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.borderedProminent)
@@ -66,11 +66,11 @@ struct NumberInputView: View {
                 .padding(.horizontal)
                 .padding(.bottom)
             }
-            .navigationTitle("번호 입력")
+            .navigationTitle(String(localized: "numberInput.title"))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("취소") { dismiss() }
+                    Button("numberInput.cancel") { dismiss() }
                 }
             }
             .onAppear {
@@ -90,7 +90,7 @@ struct NumberInputView: View {
                     .font(.title.monospaced().bold())
                     .foregroundStyle(.green)
 
-                Text("패턴 모두 차단 (\(result.count.formatted())개)")
+                Text("numberInput.blockPattern \(result.count.formatted())")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
             }

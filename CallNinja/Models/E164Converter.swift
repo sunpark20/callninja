@@ -19,15 +19,15 @@ enum E164Error: Error, LocalizedError {
     var errorDescription: String? {
         switch self {
         case .empty:
-            return "번호를 입력해 주세요"
+            return String(localized: "e164.empty")
         case .tooShort(let current, _):
-            return "번호를 끝까지 입력해 주세요 (\(current)자리 입력됨)"
-        case .tooLong(let current, let maximum):
-            return "번호가 너무 깁니다 (최대 \(maximum)자리)"
+            return String(localized: "e164.tooShort \(current)")
+        case .tooLong(_, let maximum):
+            return String(localized: "e164.tooLong \(maximum)")
         case .invalidNumber:
-            return "유효하지 않은 번호입니다"
+            return String(localized: "e164.invalid")
         case .duplicatePrefix(let slot):
-            return "슬롯 \(slot + 1)에 이미 같은 범위가 등록되어 있습니다"
+            return String(localized: "e164.duplicate \(slot + 1)")
         }
     }
 }

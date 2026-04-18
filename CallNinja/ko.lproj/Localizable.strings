@@ -1,0 +1,74 @@
+/* Onboarding */
+"onboarding.title" = "콜닌자 설정";
+"onboarding.selectCountry" = "사용할 나라를 선택하세요";
+"onboarding.selectCountryDesc" = "선택한 나라의 전화번호 형식에 맞게\n차단 범위가 자동 계산됩니다.";
+"onboarding.selectCountryButton" = "나라 선택";
+"onboarding.next" = "다음";
+"onboarding.enableExtensions" = "설정에서 10개 항목을 켜주세요";
+"onboarding.settingsPath.ios18" = "설정 > 앱 > 전화 > 차단 및 발신자 확인";
+"onboarding.settingsPath.legacy" = "설정 > 전화 > 차단 및 발신자 확인";
+"onboarding.openSettings" = "설정 열기";
+"onboarding.start" = "시작하기";
+"onboarding.activated" = "활성화";
+
+/* Country Picker */
+"countryPicker.title" = "나라 선택";
+"countryPicker.search" = "나라 검색";
+"countryPicker.close" = "닫기";
+
+/* Main View */
+"main.title" = "콜닌자";
+"main.changeCountry" = "나라 변경";
+"main.changeCountryAlert" = "나라를 변경하시겠습니까?";
+"main.changeCountryMessage" = "나라를 변경하면 모든 차단 설정이 초기화됩니다.";
+"main.change" = "변경";
+"main.cancel" = "취소";
+"main.slotsSection" = "차단 슬롯";
+"main.contactsNote" = "연락처에 저장된 번호는 차단되지 않습니다.";
+
+/* Slot Row */
+"slot.empty" = "차단할 번호를 입력하세요";
+"slot.loading" = "등록 중...";
+"slot.blocking" = "100만개 차단 중";
+"slot.disabled" = "차단 중지됨";
+"slot.enableInSettings" = "설정에서 켜주세요";
+"slot.reinstallApp" = "앱을 재설치해 주세요";
+
+/* Slot Detail */
+"slotDetail.title %lld" = "슬롯 %lld";
+"slotDetail.range" = "차단 범위";
+"slotDetail.total" = "총 1,000,000개";
+"slotDetail.originalNumber" = "원본 번호";
+"slotDetail.changeNumber" = "번호 변경";
+"slotDetail.delete" = "삭제";
+"slotDetail.close" = "닫기";
+
+/* Number Input */
+"numberInput.title" = "번호 입력";
+"numberInput.instruction" = "스팸 전화에서 본 번호를\n그대로 입력하세요";
+"numberInput.placeholder" = "전화번호 입력";
+"numberInput.confirm" = "확인";
+"numberInput.cancel" = "취소";
+"numberInput.blockPattern %@" = "패턴 모두 차단 (%@개)";
+
+/* E164 Errors */
+"e164.empty" = "번호를 입력해 주세요";
+"e164.tooShort %lld" = "번호를 끝까지 입력해 주세요 (%lld자리 입력됨)";
+"e164.tooLong %lld" = "번호가 너무 깁니다 (최대 %lld자리)";
+"e164.invalid" = "유효하지 않은 번호입니다";
+"e164.duplicate %lld" = "슬롯 %lld에 이미 같은 범위가 등록되어 있습니다";
+
+/* CallKit Errors */
+"error.unknown" = "알 수 없는 오류. 기기를 재시작해 보세요.";
+"error.noExtensionFound" = "익스텐션을 찾을 수 없음. 앱을 재설치해 주세요.";
+"error.loadingInterrupted" = "로딩 중단됨. 다시 시도해 주세요.";
+"error.entriesOutOfOrder" = "내부 오류 (번호 순서). 개발자에게 문의해 주세요.";
+"error.duplicateEntries" = "내부 오류 (중복). 개발자에게 문의해 주세요.";
+"error.maximumEntriesExceeded" = "등록 한도 초과. 개발자에게 문의해 주세요.";
+"error.extensionDisabled" = "설정에서 꺼져 있습니다. 설정에서 켜주세요.";
+"error.currentlyLoading" = "이미 로딩 중. 잠시 후 다시 시도해 주세요.";
+"error.unexpectedIncrementalRemoval" = "설정에서 OFF→ON 후 다시 시도해 주세요.";
+"error.codeN %lld" = "오류 코드 %lld. 기기를 재시작해 보세요.";
+"error.sqlite19" = "DB 충돌. 앱 삭제 → 기기 재시작 → 앱 재설치 후 다시 시도해 주세요.";
+"error.sqliteN" = "DB 오류. 앱 삭제 → 기기 재시작 → 앱 재설치 후 다시 시도해 주세요.";
+"error.other %@ %lld" = "%@:%lld — 기기를 재시작해 보세요.";

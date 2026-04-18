@@ -164,27 +164,27 @@ final class SlotManager: ObservableObject {
 
         if nsError.domain == "com.apple.CallKit.error.calldirectorymanager" {
             switch nsError.code {
-            case 0: return ("unknown", "알 수 없는 오류. 기기를 재시작해 보세요.")
-            case 1: return ("noExtensionFound", "익스텐션을 찾을 수 없음. 앱을 재설치해 주세요.")
-            case 2: return ("loadingInterrupted", "로딩 중단됨. 다시 시도해 주세요.")
-            case 3: return ("entriesOutOfOrder", "내부 오류 (번호 순서). 개발자에게 문의해 주세요.")
-            case 4: return ("duplicateEntries", "내부 오류 (중복). 개발자에게 문의해 주세요.")
-            case 5: return ("maximumEntriesExceeded", "등록 한도 초과. 개발자에게 문의해 주세요.")
-            case 6: return ("extensionDisabled", "설정에서 꺼져 있습니다. 설정에서 켜주세요.")
-            case 7: return ("currentlyLoading", "이미 로딩 중. 잠시 후 다시 시도해 주세요.")
-            case 8: return ("unexpectedIncrementalRemoval", "설정에서 OFF→ON 후 다시 시도해 주세요.")
-            default: return ("code\(nsError.code)", "오류 코드 \(nsError.code). 기기를 재시작해 보세요.")
+            case 0: return ("unknown", String(localized: "error.unknown"))
+            case 1: return ("noExtensionFound", String(localized: "error.noExtensionFound"))
+            case 2: return ("loadingInterrupted", String(localized: "error.loadingInterrupted"))
+            case 3: return ("entriesOutOfOrder", String(localized: "error.entriesOutOfOrder"))
+            case 4: return ("duplicateEntries", String(localized: "error.duplicateEntries"))
+            case 5: return ("maximumEntriesExceeded", String(localized: "error.maximumEntriesExceeded"))
+            case 6: return ("extensionDisabled", String(localized: "error.extensionDisabled"))
+            case 7: return ("currentlyLoading", String(localized: "error.currentlyLoading"))
+            case 8: return ("unexpectedIncrementalRemoval", String(localized: "error.unexpectedIncrementalRemoval"))
+            default: return ("code\(nsError.code)", String(localized: "error.codeN \(nsError.code)"))
             }
         }
 
         if nsError.domain == "com.apple.callkit.database.sqlite" {
             if nsError.code == 19 {
-                return ("sqlite:19", "DB 충돌. 앱 삭제 → 기기 재시작 → 앱 재설치 후 다시 시도해 주세요.")
+                return ("sqlite:19", String(localized: "error.sqlite19"))
             }
-            return ("sqlite:\(nsError.code)", "DB 오류. 앱 삭제 → 기기 재시작 → 앱 재설치 후 다시 시도해 주세요.")
+            return ("sqlite:\(nsError.code)", String(localized: "error.sqliteN"))
         }
 
-        return ("other:\(nsError.code)", "\(nsError.domain):\(nsError.code) — 기기를 재시작해 보세요.")
+        return ("other:\(nsError.code)", String(localized: "error.other \(nsError.domain) \(nsError.code)"))
     }
 }
 

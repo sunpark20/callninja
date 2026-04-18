@@ -3,6 +3,8 @@ options:
   bundleIdPrefix: com.callninja
   deploymentTarget:
     iOS: "16.0"
+  defaultConfig: Release
+  developmentLanguage: en
 
 settings:
   base:

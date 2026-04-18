@@ -15,7 +15,7 @@ struct SlotRowView: View {
                     .frame(width: 28)
 
                 if slot.isEmpty {
-                    Text("차단할 번호를 입력하세요")
+                    Text("slot.empty")
                         .foregroundStyle(.secondary)
                 } else {
                     VStack(alignment: .leading, spacing: 2) {
@@ -25,15 +25,15 @@ struct SlotRowView: View {
                         if let error {
                             errorText(error)
                         } else if isReloading {
-                            Text("등록 중...")
+                            Text("slot.loading")
                                 .font(.caption)
                                 .foregroundStyle(.orange)
                         } else if slot.isEnabled {
-                            Text("100만개 차단 중")
+                            Text("slot.blocking")
                                 .font(.caption)
                                 .foregroundStyle(.green)
                         } else {
-                            Text("차단 중지됨")
+                            Text("slot.disabled")
                                 .font(.caption)
                                 .foregroundStyle(.secondary)
                         }
@@ -93,11 +93,11 @@ struct SlotRowView: View {
                 .font(.caption)
                 .foregroundStyle(.red)
         case .extensionDisabled:
-            Text("설정에서 켜주세요")
+            Text("slot.enableInSettings")
                 .font(.caption)
                 .foregroundStyle(.yellow)
         case .appGroupFailure:
-            Text("앱을 재설치해 주세요")
+            Text("slot.reinstallApp")
                 .font(.caption)
                 .foregroundStyle(.red)
         }

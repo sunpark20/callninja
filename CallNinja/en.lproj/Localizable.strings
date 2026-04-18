@@ -1,0 +1,74 @@
+/* Onboarding */
+"onboarding.title" = "CallNinja Setup";
+"onboarding.selectCountry" = "Select your country";
+"onboarding.selectCountryDesc" = "The blocking range will be automatically\ncalculated based on your country's phone format.";
+"onboarding.selectCountryButton" = "Select Country";
+"onboarding.next" = "Next";
+"onboarding.enableExtensions" = "Enable 10 items in Settings";
+"onboarding.settingsPath.ios18" = "Settings > Apps > Phone > Call Blocking & Identification";
+"onboarding.settingsPath.legacy" = "Settings > Phone > Call Blocking & Identification";
+"onboarding.openSettings" = "Open Settings";
+"onboarding.start" = "Get Started";
+"onboarding.activated" = "activated";
+
+/* Country Picker */
+"countryPicker.title" = "Select Country";
+"countryPicker.search" = "Search country";
+"countryPicker.close" = "Close";
+
+/* Main View */
+"main.title" = "CallNinja";
+"main.changeCountry" = "Change Country";
+"main.changeCountryAlert" = "Change country?";
+"main.changeCountryMessage" = "Changing the country will reset all blocking settings.";
+"main.change" = "Change";
+"main.cancel" = "Cancel";
+"main.slotsSection" = "Blocking Slots";
+"main.contactsNote" = "Numbers saved in Contacts will not be blocked.";
+
+/* Slot Row */
+"slot.empty" = "Tap to enter a number";
+"slot.loading" = "Registering...";
+"slot.blocking" = "1M numbers blocked";
+"slot.disabled" = "Blocking paused";
+"slot.enableInSettings" = "Enable in Settings";
+"slot.reinstallApp" = "Please reinstall the app";
+
+/* Slot Detail */
+"slotDetail.title %lld" = "Slot %lld";
+"slotDetail.range" = "Blocking Range";
+"slotDetail.total" = "Total 1,000,000";
+"slotDetail.originalNumber" = "Original Number";
+"slotDetail.changeNumber" = "Change Number";
+"slotDetail.delete" = "Delete";
+"slotDetail.close" = "Close";
+
+/* Number Input */
+"numberInput.title" = "Enter Number";
+"numberInput.instruction" = "Enter the spam number\nexactly as you received it";
+"numberInput.placeholder" = "Phone number";
+"numberInput.confirm" = "Confirm";
+"numberInput.cancel" = "Cancel";
+"numberInput.blockPattern %@" = "Block entire pattern (%@ numbers)";
+
+/* E164 Errors */
+"e164.empty" = "Please enter a number";
+"e164.tooShort %lld" = "Enter the full number (%lld digits entered)";
+"e164.tooLong %lld" = "Number is too long (max %lld digits)";
+"e164.invalid" = "Invalid number";
+"e164.duplicate %lld" = "This range is already registered in Slot %lld";
+
+/* CallKit Errors */
+"error.unknown" = "Unknown error. Try restarting your device.";
+"error.noExtensionFound" = "Extension not found. Please reinstall the app.";
+"error.loadingInterrupted" = "Loading interrupted. Please try again.";
+"error.entriesOutOfOrder" = "Internal error (ordering). Contact developer.";
+"error.duplicateEntries" = "Internal error (duplicate). Contact developer.";
+"error.maximumEntriesExceeded" = "Entry limit exceeded. Contact developer.";
+"error.extensionDisabled" = "Disabled in Settings. Please enable it.";
+"error.currentlyLoading" = "Already loading. Please wait and try again.";
+"error.unexpectedIncrementalRemoval" = "Toggle OFF→ON in Settings, then try again.";
+"error.codeN %lld" = "Error code %lld. Try restarting your device.";
+"error.sqlite19" = "DB conflict. Delete app → Restart device → Reinstall.";
+"error.sqliteN" = "DB error. Delete app → Restart device → Reinstall.";
+"error.other %@ %lld" = "%@:%lld — Try restarting your device.";

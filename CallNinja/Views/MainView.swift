@@ -17,11 +17,11 @@ struct MainView: View {
                 slotListSection
                 infoSection
             }
-            .navigationTitle("콜닌자")
+            .navigationTitle(String(localized: "main.title"))
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Menu {
-                        Button("나라 변경") { showCountryChange = true }
+                        Button("main.changeCountry") { showCountryChange = true }
                     } label: {
                         Image(systemName: "gearshape")
                     }
@@ -58,15 +58,15 @@ struct MainView: View {
                     )
                 }
             }
-            .alert("나라를 변경하시겠습니까?", isPresented: $showCountryChange) {
-                Button("변경", role: .destructive) {
+            .alert(String(localized: "main.changeCountryAlert"), isPresented: $showCountryChange) {
+                Button("main.change", role: .destructive) {
                     slotManager.clearAllSlots()
                     countryManager.clearSelection()
                     UserDefaults.standard.set(false, forKey: "onboarding_done")
                 }
-                Button("취소", role: .cancel) {}
+                Button("main.cancel", role: .cancel) {}
             } message: {
-                Text("나라를 변경하면 모든 차단 설정이 초기화됩니다.")
+                Text("main.changeCountryMessage")
             }
             .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
                 Task { await slotManager.refreshStatuses() }
@@ -83,10 +83,10 @@ struct MainView: View {
                     Text("\(country.flag) \(country.name)")
                     Spacer()
                     if slotManager.enabledCount < SlotManager.slotCount {
-                        Text("\(slotManager.enabledCount)/\(SlotManager.slotCount) 활성화")
+                        Text("\(slotManager.enabledCount)/\(SlotManager.slotCount) \(String(localized: "onboarding.activated"))")
                             .foregroundStyle(.orange)
                     } else {
-                        Text("\(slotManager.enabledCount)/\(SlotManager.slotCount) 활성화")
+                        Text("\(slotManager.enabledCount)/\(SlotManager.slotCount) \(String(localized: "onboarding.activated"))")
                             .foregroundStyle(.green)
                     }
                 }
@@ -95,7 +95,7 @@ struct MainView: View {
     }
 
     private var slotListSection: some View {
-        Section("차단 슬롯") {
+        Section(String(localized: "main.slotsSection")) {
             ForEach(slotManager.orderedSlots) { slot in
                 SlotRowView(
                     slot: slot,
@@ -125,7 +125,7 @@ struct MainView: View {
 
     private var infoSection: some View {
         Section {
-            Text("연락처에 저장된 번호는 차단되지 않습니다.")
+            Text("main.contactsNote")
                 .font(.caption)
                 .foregroundStyle(.secondary)
         }
@@ -150,29 +150,29 @@ struct SlotDetailView: View {
                 }
 
                 if let start = slot.rangeStart, let end = slot.rangeEnd {
-                    Section("차단 범위") {
+                    Section(String(localized: "slotDetail.range")) {
                         Text("\(start) ~ \(end)")
                             .font(.caption.monospaced())
-                        Text("총 1,000,000개")
+                        Text("slotDetail.total")
                     }
                 }
 
                 if let input = slot.inputNumber {
-                    Section("원본 번호") {
+                    Section(String(localized: "slotDetail.originalNumber")) {
                         Text(input)
                     }
                 }
 
                 Section {
-                    Button("번호 변경") { onChange() }
-                    Button("삭제", role: .destructive) { onDelete() }
+                    Button("slotDetail.changeNumber") { onChange() }
+                    Button("slotDetail.delete", role: .destructive) { onDelete() }
                 }
             }
-            .navigationTitle("슬롯 \(slot.id + 1)")
+            .navigationTitle(String(localized: "slotDetail.title \(slot.id + 1)"))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("닫기") { dismiss() }
+                    Button("slotDetail.close") { dismiss() }
                 }
             }
         }
