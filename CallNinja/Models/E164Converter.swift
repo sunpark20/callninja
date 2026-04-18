@@ -20,8 +20,8 @@ enum E164Error: Error, LocalizedError {
         switch self {
         case .empty:
             return "번호를 입력해 주세요"
-        case .tooShort(let current, let minimum):
-            return "번호를 끝까지 입력해 주세요 (\(current)/\(minimum)자리)"
+        case .tooShort(let current, _):
+            return "번호를 끝까지 입력해 주세요 (\(current)자리 입력됨)"
         case .tooLong(let current, let maximum):
             return "번호가 너무 깁니다 (최대 \(maximum)자리)"
         case .invalidNumber:
