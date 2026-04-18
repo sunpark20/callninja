@@ -1,0 +1,5 @@
+[
+  {"name":"대한민국","nameEn":"South Korea","code":82,"iso":"KR","flag":"🇰🇷","stripLeadingZero":true,"minLocalDigits":9,"maxLocalDigits":11},
+  {"name":"미국","nameEn":"United States","code":1,"iso":"US","flag":"🇺🇸","stripLeadingZero":false,"minLocalDigits":10,"maxLocalDigits":10},
+  {"name":"일본","nameEn":"Japan","code":81,"iso":"JP","flag":"🇯🇵","stripLeadingZero":true,"minLocalDigits":9,"maxLocalDigits":11}
+]
