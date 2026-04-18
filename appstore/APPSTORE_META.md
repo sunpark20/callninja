@@ -3,8 +3,8 @@
 ## 기본 정보
 - **앱 이름 (한국)**: 콜닌자 - 스팸 전화 패턴 차단
 - **앱 이름 (영어)**: CallNinja - Spam Call Blocker
-- **부제 (한국)**: 번호 하나 입력하면 100만개 차단
-- **부제 (영어)**: Enter one number, block 1 million
+- **부제 (한국)**: 번호 범위를 직접 지정해서 차단
+- **부제 (영어)**: Block Any Number Range
 - **카테고리**: 유틸리티
 - **가격**: 무료
 - **연령 등급**: 4+
@@ -58,7 +58,7 @@ Spammers change the last few digits and call again.
 Blocking them one by one doesn't work.
 
 CallNinja blocks an entire number range at once.
-070-77XX-XXXX — 1 million numbers in this range, blocked instantly.
+323-7XX-XXXX — 1 million numbers in this range, blocked instantly.
 
 Unlike other call-blocking apps:
 Other apps show a "suspected spam" popup, but your phone still rings.
@@ -71,8 +71,8 @@ Your phone doesn't ring. The call never reaches you.
 3. Enter the spam number exactly as you received it
 4. The matching range is automatically blocked
 
-Example: Enter 070-7737-4540
-→ Blocks all 070-77XX-XXXX (1,000,000 numbers)
+Example: Enter 323-773-4540
+→ Blocks all 323-7XX-XXXX (1,000,000 numbers)
 → No matter what last digits they use, all blocked.
 
 [Key Features]
@@ -95,13 +95,15 @@ Example: Enter 070-7737-4540
 스팸차단, 전화차단, 보이스피싱, 스팸전화, 패턴차단, 070차단, 콜차단, 스팸필터, 스팸번호, 전화번호차단
 
 ## 키워드 (영어)
-spam blocker, call blocker, spam call, block calls, phone spam, pattern block, call filter, robocall, telemarketer, unwanted calls
+scam,scam call,spam blocker,call blocker,spam call,robocall,block calls,call filter,telemarketer
 
 ---
 
 ## 심사 노트 (App Review Notes)
 
 ```
+This app operates identically to my previously approved app "SpamCall070" (Bundle ID: com.spamcall070.app), which uses the same CallKit Call Directory Extension mechanism. SpamCall070 has already been reviewed and approved by App Store Review, with test videos and supporting documentation submitted and accepted during that review. SpamCall070 is currently under review (or has been approved). CallNinja uses the exact same technical implementation — only the user interface and the number of supported countries differ.
+
 This app lets users block spam calls by entering a single phone number. The app automatically calculates the matching number pattern and blocks up to 1 million numbers per slot using iOS CallKit Call Directory Extension.
 
 Technical explanation for 10 extensions:

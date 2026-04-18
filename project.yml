@@ -21,10 +21,13 @@ targets:
     info:
       path: CallNinja/Info.plist
       properties:
-        CFBundleDisplayName: "콜닌자"
+        CFBundleDisplayName: "CallNinja"
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.callninja.app
@@ -51,13 +54,16 @@ targets:
     platform: iOS
     sources:
       - path: NinjaBlockBase
+      - path: NinjaBlock00
+        excludes:
+          - "**/*.plist"
     info:
       path: NinjaBlock00/Info.plist
       properties:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "콜닌자 슬롯 1"
+        CFBundleDisplayName: "Slot 1"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.callninja.app.NinjaBlock00
@@ -68,13 +74,16 @@ targets:
     platform: iOS
     sources:
       - path: NinjaBlockBase
+      - path: NinjaBlock01
+        excludes:
+          - "**/*.plist"
     info:
       path: NinjaBlock01/Info.plist
       properties:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "콜닌자 슬롯 2"
+        CFBundleDisplayName: "Slot 2"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.callninja.app.NinjaBlock01
@@ -85,13 +94,16 @@ targets:
     platform: iOS
     sources:
       - path: NinjaBlockBase
+      - path: NinjaBlock02
+        excludes:
+          - "**/*.plist"
     info:
       path: NinjaBlock02/Info.plist
       properties:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "콜닌자 슬롯 3"
+        CFBundleDisplayName: "Slot 3"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.callninja.app.NinjaBlock02
@@ -102,13 +114,16 @@ targets:
     platform: iOS
     sources:
       - path: NinjaBlockBase
+      - path: NinjaBlock03
+        excludes:
+          - "**/*.plist"
     info:
       path: NinjaBlock03/Info.plist
       properties:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "콜닌자 슬롯 4"
+        CFBundleDisplayName: "Slot 4"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.callninja.app.NinjaBlock03
@@ -119,13 +134,16 @@ targets:
     platform: iOS
     sources:
       - path: NinjaBlockBase
+      - path: NinjaBlock04
+        excludes:
+          - "**/*.plist"
     info:
       path: NinjaBlock04/Info.plist
       properties:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "콜닌자 슬롯 5"
+        CFBundleDisplayName: "Slot 5"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.callninja.app.NinjaBlock04
@@ -136,13 +154,16 @@ targets:
     platform: iOS
     sources:
       - path: NinjaBlockBase
+      - path: NinjaBlock05
+        excludes:
+          - "**/*.plist"
     info:
       path: NinjaBlock05/Info.plist
       properties:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "콜닌자 슬롯 6"
+        CFBundleDisplayName: "Slot 6"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.callninja.app.NinjaBlock05
@@ -153,13 +174,16 @@ targets:
     platform: iOS
     sources:
       - path: NinjaBlockBase
+      - path: NinjaBlock06
+        excludes:
+          - "**/*.plist"
     info:
       path: NinjaBlock06/Info.plist
       properties:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "콜닌자 슬롯 7"
+        CFBundleDisplayName: "Slot 7"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.callninja.app.NinjaBlock06
@@ -170,13 +194,16 @@ targets:
     platform: iOS
     sources:
       - path: NinjaBlockBase
+      - path: NinjaBlock07
+        excludes:
+          - "**/*.plist"
     info:
       path: NinjaBlock07/Info.plist
       properties:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "콜닌자 슬롯 8"
+        CFBundleDisplayName: "Slot 8"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.callninja.app.NinjaBlock07
@@ -187,13 +214,16 @@ targets:
     platform: iOS
     sources:
       - path: NinjaBlockBase
+      - path: NinjaBlock08
+        excludes:
+          - "**/*.plist"
     info:
       path: NinjaBlock08/Info.plist
       properties:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "콜닌자 슬롯 9"
+        CFBundleDisplayName: "Slot 9"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.callninja.app.NinjaBlock08
@@ -204,13 +234,16 @@ targets:
     platform: iOS
     sources:
       - path: NinjaBlockBase
+      - path: NinjaBlock09
+        excludes:
+          - "**/*.plist"
     info:
       path: NinjaBlock09/Info.plist
       properties:
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
-        CFBundleDisplayName: "콜닌자 슬롯 10"
+        CFBundleDisplayName: "Slot 10"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.callninja.app.NinjaBlock09
