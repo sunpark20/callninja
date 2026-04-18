@@ -160,18 +160,20 @@ struct OnboardingView: View {
 
     private func openCallBlockingSettings() {
         let candidates = [
+            "App-prefs:com.apple.mobilephone&path=CALL_BLOCKING_AND_IDENTIFICATION",
+            "App-prefs:com.apple.mobilephone",
+            "prefs:root=Apps&path=com.apple.mobilephone",
             "App-prefs:Phone&path=CALL_BLOCKING_AND_IDENTIFICATION",
             "App-prefs:Phone",
-            "App-prefs:"
+            "prefs:root=Phone",
         ]
-        for candidate in candidates {
-            if let url = URL(string: candidate), UIApplication.shared.canOpenURL(url) {
-                UIApplication.shared.open(url)
+        for urlString in candidates {
+            if let url = URL(string: urlString) {
+                UIApplication.shared.open(url) { success in
+                    if success { return }
+                }
                 return
             }
-        }
-        if let url = URL(string: UIApplication.openSettingsURLString) {
-            UIApplication.shared.open(url)
         }
     }
 }
