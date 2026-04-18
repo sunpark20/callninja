@@ -1,5 +1,2492 @@
 [
-  {"name":"대한민국","nameEn":"South Korea","code":82,"iso":"KR","flag":"🇰🇷","stripLeadingZero":true,"minLocalDigits":9,"maxLocalDigits":11},
-  {"name":"미국","nameEn":"United States","code":1,"iso":"US","flag":"🇺🇸","stripLeadingZero":false,"minLocalDigits":10,"maxLocalDigits":10},
-  {"name":"일본","nameEn":"Japan","code":81,"iso":"JP","flag":"🇯🇵","stripLeadingZero":true,"minLocalDigits":9,"maxLocalDigits":11}
+  {
+    "name": "가나",
+    "nameEn": "Ghana",
+    "code": 233,
+    "iso": "GH",
+    "flag": "🇬🇭",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "가봉",
+    "nameEn": "Gabon",
+    "code": 241,
+    "iso": "GA",
+    "flag": "🇬🇦",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "가이아나",
+    "nameEn": "Guyana",
+    "code": 592,
+    "iso": "GY",
+    "flag": "🇬🇾",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "감비아",
+    "nameEn": "Gambia",
+    "code": 220,
+    "iso": "GM",
+    "flag": "🇬🇲",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "건지",
+    "nameEn": "Guernsey",
+    "code": 44,
+    "iso": "GG",
+    "flag": "🇬🇬",
+    "stripLeadingZero": true,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "과들루프",
+    "nameEn": "Guadeloupe",
+    "code": 590,
+    "iso": "GP",
+    "flag": "🇬🇵",
+    "stripLeadingZero": true,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "과테말라",
+    "nameEn": "Guatemala",
+    "code": 502,
+    "iso": "GT",
+    "flag": "🇬🇹",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "괌",
+    "nameEn": "Guam",
+    "code": 1,
+    "iso": "GU",
+    "flag": "🇬🇺",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "그레나다",
+    "nameEn": "Grenada",
+    "code": 1,
+    "iso": "GD",
+    "flag": "🇬🇩",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "그리스",
+    "nameEn": "Greece",
+    "code": 30,
+    "iso": "GR",
+    "flag": "🇬🇷",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "그린란드",
+    "nameEn": "Greenland",
+    "code": 299,
+    "iso": "GL",
+    "flag": "🇬🇱",
+    "stripLeadingZero": false,
+    "minLocalDigits": 6,
+    "maxLocalDigits": 6
+  },
+  {
+    "name": "기니",
+    "nameEn": "Guinea",
+    "code": 224,
+    "iso": "GN",
+    "flag": "🇬🇳",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "기니비사우",
+    "nameEn": "Guinea-Bissau",
+    "code": 245,
+    "iso": "GW",
+    "flag": "🇬🇼",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "나미비아",
+    "nameEn": "Namibia",
+    "code": 264,
+    "iso": "NA",
+    "flag": "🇳🇦",
+    "stripLeadingZero": true,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "나우루",
+    "nameEn": "Nauru",
+    "code": 674,
+    "iso": "NR",
+    "flag": "🇳🇷",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "나이지리아",
+    "nameEn": "Nigeria",
+    "code": 234,
+    "iso": "NG",
+    "flag": "🇳🇬",
+    "stripLeadingZero": true,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 11
+  },
+  {
+    "name": "남극",
+    "nameEn": "Antarctica",
+    "code": 672,
+    "iso": "AQ",
+    "flag": "🇦🇶",
+    "stripLeadingZero": false,
+    "minLocalDigits": 6,
+    "maxLocalDigits": 6
+  },
+  {
+    "name": "남수단",
+    "nameEn": "South Sudan",
+    "code": 211,
+    "iso": "SS",
+    "flag": "🇸🇸",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "남아프리카 공화국",
+    "nameEn": "South Africa",
+    "code": 27,
+    "iso": "ZA",
+    "flag": "🇿🇦",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "네덜란드",
+    "nameEn": "Netherlands",
+    "code": 31,
+    "iso": "NL",
+    "flag": "🇳🇱",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "네팔",
+    "nameEn": "Nepal",
+    "code": 977,
+    "iso": "NP",
+    "flag": "🇳🇵",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "노르웨이",
+    "nameEn": "Norway",
+    "code": 47,
+    "iso": "NO",
+    "flag": "🇳🇴",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "노퍽섬",
+    "nameEn": "Norfolk Island",
+    "code": 672,
+    "iso": "NF",
+    "flag": "🇳🇫",
+    "stripLeadingZero": false,
+    "minLocalDigits": 5,
+    "maxLocalDigits": 6
+  },
+  {
+    "name": "뉴질랜드",
+    "nameEn": "New Zealand",
+    "code": 64,
+    "iso": "NZ",
+    "flag": "🇳🇿",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "뉴칼레도니아",
+    "nameEn": "New Caledonia",
+    "code": 687,
+    "iso": "NC",
+    "flag": "🇳🇨",
+    "stripLeadingZero": false,
+    "minLocalDigits": 6,
+    "maxLocalDigits": 6
+  },
+  {
+    "name": "니우에",
+    "nameEn": "Niue",
+    "code": 683,
+    "iso": "NU",
+    "flag": "🇳🇺",
+    "stripLeadingZero": false,
+    "minLocalDigits": 4,
+    "maxLocalDigits": 4
+  },
+  {
+    "name": "니제르",
+    "nameEn": "Niger",
+    "code": 227,
+    "iso": "NE",
+    "flag": "🇳🇪",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "니카라과",
+    "nameEn": "Nicaragua",
+    "code": 505,
+    "iso": "NI",
+    "flag": "🇳🇮",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "대만",
+    "nameEn": "Taiwan",
+    "code": 886,
+    "iso": "TW",
+    "flag": "🇹🇼",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "대한민국",
+    "nameEn": "South Korea",
+    "code": 82,
+    "iso": "KR",
+    "flag": "🇰🇷",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 11
+  },
+  {
+    "name": "덴마크",
+    "nameEn": "Denmark",
+    "code": 45,
+    "iso": "DK",
+    "flag": "🇩🇰",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "도미니카 공화국",
+    "nameEn": "Dominican Republic",
+    "code": 1,
+    "iso": "DO",
+    "flag": "🇩🇴",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "도미니카 연방",
+    "nameEn": "Dominica",
+    "code": 1,
+    "iso": "DM",
+    "flag": "🇩🇲",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "독일",
+    "nameEn": "Germany",
+    "code": 49,
+    "iso": "DE",
+    "flag": "🇩🇪",
+    "stripLeadingZero": true,
+    "minLocalDigits": 6,
+    "maxLocalDigits": 12
+  },
+  {
+    "name": "동티모르",
+    "nameEn": "Timor-Leste",
+    "code": 670,
+    "iso": "TL",
+    "flag": "🇹🇱",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "라오스",
+    "nameEn": "Laos",
+    "code": 856,
+    "iso": "LA",
+    "flag": "🇱🇦",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "라이베리아",
+    "nameEn": "Liberia",
+    "code": 231,
+    "iso": "LR",
+    "flag": "🇱🇷",
+    "stripLeadingZero": true,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "라트비아",
+    "nameEn": "Latvia",
+    "code": 371,
+    "iso": "LV",
+    "flag": "🇱🇻",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "러시아",
+    "nameEn": "Russia",
+    "code": 7,
+    "iso": "RU",
+    "flag": "🇷🇺",
+    "stripLeadingZero": true,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "레바논",
+    "nameEn": "Lebanon",
+    "code": 961,
+    "iso": "LB",
+    "flag": "🇱🇧",
+    "stripLeadingZero": true,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "레소토",
+    "nameEn": "Lesotho",
+    "code": 266,
+    "iso": "LS",
+    "flag": "🇱🇸",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "레위니옹",
+    "nameEn": "Reunion",
+    "code": 262,
+    "iso": "RE",
+    "flag": "🇷🇪",
+    "stripLeadingZero": true,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "루마니아",
+    "nameEn": "Romania",
+    "code": 40,
+    "iso": "RO",
+    "flag": "🇷🇴",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "룩셈부르크",
+    "nameEn": "Luxembourg",
+    "code": 352,
+    "iso": "LU",
+    "flag": "🇱🇺",
+    "stripLeadingZero": false,
+    "minLocalDigits": 6,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "르완다",
+    "nameEn": "Rwanda",
+    "code": 250,
+    "iso": "RW",
+    "flag": "🇷🇼",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "리비아",
+    "nameEn": "Libya",
+    "code": 218,
+    "iso": "LY",
+    "flag": "🇱🇾",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "리투아니아",
+    "nameEn": "Lithuania",
+    "code": 370,
+    "iso": "LT",
+    "flag": "🇱🇹",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "리히텐슈타인",
+    "nameEn": "Liechtenstein",
+    "code": 423,
+    "iso": "LI",
+    "flag": "🇱🇮",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "마다가스카르",
+    "nameEn": "Madagascar",
+    "code": 261,
+    "iso": "MG",
+    "flag": "🇲🇬",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "마르티니크",
+    "nameEn": "Martinique",
+    "code": 596,
+    "iso": "MQ",
+    "flag": "🇲🇶",
+    "stripLeadingZero": true,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "마셜 제도",
+    "nameEn": "Marshall Islands",
+    "code": 692,
+    "iso": "MH",
+    "flag": "🇲🇭",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "마요트",
+    "nameEn": "Mayotte",
+    "code": 262,
+    "iso": "YT",
+    "flag": "🇾🇹",
+    "stripLeadingZero": true,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "마카오",
+    "nameEn": "Macau",
+    "code": 853,
+    "iso": "MO",
+    "flag": "🇲🇴",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "마케도니아",
+    "nameEn": "North Macedonia",
+    "code": 389,
+    "iso": "MK",
+    "flag": "🇲🇰",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "말라위",
+    "nameEn": "Malawi",
+    "code": 265,
+    "iso": "MW",
+    "flag": "🇲🇼",
+    "stripLeadingZero": true,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "말레이시아",
+    "nameEn": "Malaysia",
+    "code": 60,
+    "iso": "MY",
+    "flag": "🇲🇾",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 11
+  },
+  {
+    "name": "말리",
+    "nameEn": "Mali",
+    "code": 223,
+    "iso": "ML",
+    "flag": "🇲🇱",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "말타",
+    "nameEn": "Malta",
+    "code": 356,
+    "iso": "MT",
+    "flag": "🇲🇹",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "맨섬",
+    "nameEn": "Isle of Man",
+    "code": 44,
+    "iso": "IM",
+    "flag": "🇮🇲",
+    "stripLeadingZero": true,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "멕시코",
+    "nameEn": "Mexico",
+    "code": 52,
+    "iso": "MX",
+    "flag": "🇲🇽",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "모나코",
+    "nameEn": "Monaco",
+    "code": 377,
+    "iso": "MC",
+    "flag": "🇲🇨",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "모로코",
+    "nameEn": "Morocco",
+    "code": 212,
+    "iso": "MA",
+    "flag": "🇲🇦",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "모리셔스",
+    "nameEn": "Mauritius",
+    "code": 230,
+    "iso": "MU",
+    "flag": "🇲🇺",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "모리타니",
+    "nameEn": "Mauritania",
+    "code": 222,
+    "iso": "MR",
+    "flag": "🇲🇷",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "모잠비크",
+    "nameEn": "Mozambique",
+    "code": 258,
+    "iso": "MZ",
+    "flag": "🇲🇿",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "몬테네그로",
+    "nameEn": "Montenegro",
+    "code": 382,
+    "iso": "ME",
+    "flag": "🇲🇪",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "몬트세랫",
+    "nameEn": "Montserrat",
+    "code": 1,
+    "iso": "MS",
+    "flag": "🇲🇸",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "몰도바",
+    "nameEn": "Moldova",
+    "code": 373,
+    "iso": "MD",
+    "flag": "🇲🇩",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "몰디브",
+    "nameEn": "Maldives",
+    "code": 960,
+    "iso": "MV",
+    "flag": "🇲🇻",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "몽골",
+    "nameEn": "Mongolia",
+    "code": 976,
+    "iso": "MN",
+    "flag": "🇲🇳",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "미국",
+    "nameEn": "United States",
+    "code": 1,
+    "iso": "US",
+    "flag": "🇺🇸",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "미국령 군소 제도",
+    "nameEn": "United States Minor Outlying Islands",
+    "code": 1,
+    "iso": "UM",
+    "flag": "🇺🇲",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "미국령 버진아일랜드",
+    "nameEn": "U.S. Virgin Islands",
+    "code": 1,
+    "iso": "VI",
+    "flag": "🇻🇮",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "미국령 사모아",
+    "nameEn": "American Samoa",
+    "code": 1,
+    "iso": "AS",
+    "flag": "🇦🇸",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "미얀마",
+    "nameEn": "Myanmar",
+    "code": 95,
+    "iso": "MM",
+    "flag": "🇲🇲",
+    "stripLeadingZero": true,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "미크로네시아",
+    "nameEn": "Micronesia",
+    "code": 691,
+    "iso": "FM",
+    "flag": "🇫🇲",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "바누아투",
+    "nameEn": "Vanuatu",
+    "code": 678,
+    "iso": "VU",
+    "flag": "🇻🇺",
+    "stripLeadingZero": false,
+    "minLocalDigits": 5,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "바레인",
+    "nameEn": "Bahrain",
+    "code": 973,
+    "iso": "BH",
+    "flag": "🇧🇭",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "바베이도스",
+    "nameEn": "Barbados",
+    "code": 1,
+    "iso": "BB",
+    "flag": "🇧🇧",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "바하마",
+    "nameEn": "Bahamas",
+    "code": 1,
+    "iso": "BS",
+    "flag": "🇧🇸",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "방글라데시",
+    "nameEn": "Bangladesh",
+    "code": 880,
+    "iso": "BD",
+    "flag": "🇧🇩",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 11
+  },
+  {
+    "name": "버뮤다",
+    "nameEn": "Bermuda",
+    "code": 1,
+    "iso": "BM",
+    "flag": "🇧🇲",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "베냉",
+    "nameEn": "Benin",
+    "code": 229,
+    "iso": "BJ",
+    "flag": "🇧🇯",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "베네수엘라",
+    "nameEn": "Venezuela",
+    "code": 58,
+    "iso": "VE",
+    "flag": "🇻🇪",
+    "stripLeadingZero": true,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 11
+  },
+  {
+    "name": "베트남",
+    "nameEn": "Vietnam",
+    "code": 84,
+    "iso": "VN",
+    "flag": "🇻🇳",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 11
+  },
+  {
+    "name": "벨기에",
+    "nameEn": "Belgium",
+    "code": 32,
+    "iso": "BE",
+    "flag": "🇧🇪",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "벨라루스",
+    "nameEn": "Belarus",
+    "code": 375,
+    "iso": "BY",
+    "flag": "🇧🇾",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "벨리즈",
+    "nameEn": "Belize",
+    "code": 501,
+    "iso": "BZ",
+    "flag": "🇧🇿",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "보네르",
+    "nameEn": "Bonaire, Sint Eustatius and Saba",
+    "code": 599,
+    "iso": "BQ",
+    "flag": "🇧🇶",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "보스니아 헤르체고비나",
+    "nameEn": "Bosnia and Herzegovina",
+    "code": 387,
+    "iso": "BA",
+    "flag": "🇧🇦",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "보츠와나",
+    "nameEn": "Botswana",
+    "code": 267,
+    "iso": "BW",
+    "flag": "🇧🇼",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "볼리비아",
+    "nameEn": "Bolivia",
+    "code": 591,
+    "iso": "BO",
+    "flag": "🇧🇴",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "부룬디",
+    "nameEn": "Burundi",
+    "code": 257,
+    "iso": "BI",
+    "flag": "🇧🇮",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "부르키나파소",
+    "nameEn": "Burkina Faso",
+    "code": 226,
+    "iso": "BF",
+    "flag": "🇧🇫",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "부베섬",
+    "nameEn": "Bouvet Island",
+    "code": 47,
+    "iso": "BV",
+    "flag": "🇧🇻",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "부탄",
+    "nameEn": "Bhutan",
+    "code": 975,
+    "iso": "BT",
+    "flag": "🇧🇹",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "북마리아나 제도",
+    "nameEn": "Northern Mariana Islands",
+    "code": 1,
+    "iso": "MP",
+    "flag": "🇲🇵",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "북한",
+    "nameEn": "North Korea",
+    "code": 850,
+    "iso": "KP",
+    "flag": "🇰🇵",
+    "stripLeadingZero": true,
+    "minLocalDigits": 6,
+    "maxLocalDigits": 12
+  },
+  {
+    "name": "불가리아",
+    "nameEn": "Bulgaria",
+    "code": 359,
+    "iso": "BG",
+    "flag": "🇧🇬",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "브라질",
+    "nameEn": "Brazil",
+    "code": 55,
+    "iso": "BR",
+    "flag": "🇧🇷",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 11
+  },
+  {
+    "name": "브루나이",
+    "nameEn": "Brunei",
+    "code": 673,
+    "iso": "BN",
+    "flag": "🇧🇳",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "사모아",
+    "nameEn": "Samoa",
+    "code": 685,
+    "iso": "WS",
+    "flag": "🇼🇸",
+    "stripLeadingZero": false,
+    "minLocalDigits": 5,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "사우디아라비아",
+    "nameEn": "Saudi Arabia",
+    "code": 966,
+    "iso": "SA",
+    "flag": "🇸🇦",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "사우스조지아 사우스샌드위치 제도",
+    "nameEn": "South Georgia and the South Sandwich Islands",
+    "code": 500,
+    "iso": "GS",
+    "flag": "🇬🇸",
+    "stripLeadingZero": false,
+    "minLocalDigits": 5,
+    "maxLocalDigits": 5
+  },
+  {
+    "name": "사이프러스",
+    "nameEn": "Cyprus",
+    "code": 357,
+    "iso": "CY",
+    "flag": "🇨🇾",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "산마리노",
+    "nameEn": "San Marino",
+    "code": 378,
+    "iso": "SM",
+    "flag": "🇸🇲",
+    "stripLeadingZero": false,
+    "minLocalDigits": 6,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "상투메 프린시페",
+    "nameEn": "Sao Tome and Principe",
+    "code": 239,
+    "iso": "ST",
+    "flag": "🇸🇹",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "생마르탱",
+    "nameEn": "Saint Martin",
+    "code": 590,
+    "iso": "MF",
+    "flag": "🇲🇫",
+    "stripLeadingZero": true,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "생바르텔레미",
+    "nameEn": "Saint Barthelemy",
+    "code": 590,
+    "iso": "BL",
+    "flag": "🇧🇱",
+    "stripLeadingZero": true,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "생피에르 미클롱",
+    "nameEn": "Saint Pierre and Miquelon",
+    "code": 508,
+    "iso": "PM",
+    "flag": "🇵🇲",
+    "stripLeadingZero": false,
+    "minLocalDigits": 6,
+    "maxLocalDigits": 6
+  },
+  {
+    "name": "서사하라",
+    "nameEn": "Western Sahara",
+    "code": 212,
+    "iso": "EH",
+    "flag": "🇪🇭",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "세네갈",
+    "nameEn": "Senegal",
+    "code": 221,
+    "iso": "SN",
+    "flag": "🇸🇳",
+    "stripLeadingZero": false,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "세르비아",
+    "nameEn": "Serbia",
+    "code": 381,
+    "iso": "RS",
+    "flag": "🇷🇸",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "세이셸",
+    "nameEn": "Seychelles",
+    "code": 248,
+    "iso": "SC",
+    "flag": "🇸🇨",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "세인트루시아",
+    "nameEn": "Saint Lucia",
+    "code": 1,
+    "iso": "LC",
+    "flag": "🇱🇨",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "세인트빈센트 그레나딘",
+    "nameEn": "Saint Vincent and the Grenadines",
+    "code": 1,
+    "iso": "VC",
+    "flag": "🇻🇨",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "세인트키츠 네비스",
+    "nameEn": "Saint Kitts and Nevis",
+    "code": 1,
+    "iso": "KN",
+    "flag": "🇰🇳",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "세인트헬레나",
+    "nameEn": "Saint Helena",
+    "code": 290,
+    "iso": "SH",
+    "flag": "🇸🇭",
+    "stripLeadingZero": false,
+    "minLocalDigits": 4,
+    "maxLocalDigits": 4
+  },
+  {
+    "name": "소말리아",
+    "nameEn": "Somalia",
+    "code": 252,
+    "iso": "SO",
+    "flag": "🇸🇴",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "솔로몬 제도",
+    "nameEn": "Solomon Islands",
+    "code": 677,
+    "iso": "SB",
+    "flag": "🇸🇧",
+    "stripLeadingZero": false,
+    "minLocalDigits": 5,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "수단",
+    "nameEn": "Sudan",
+    "code": 249,
+    "iso": "SD",
+    "flag": "🇸🇩",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "수리남",
+    "nameEn": "Suriname",
+    "code": 597,
+    "iso": "SR",
+    "flag": "🇸🇷",
+    "stripLeadingZero": false,
+    "minLocalDigits": 6,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "스리랑카",
+    "nameEn": "Sri Lanka",
+    "code": 94,
+    "iso": "LK",
+    "flag": "🇱🇰",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "스발바르 얀마옌",
+    "nameEn": "Svalbard and Jan Mayen",
+    "code": 47,
+    "iso": "SJ",
+    "flag": "🇸🇯",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "스와질란드",
+    "nameEn": "Eswatini",
+    "code": 268,
+    "iso": "SZ",
+    "flag": "🇸🇿",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "스웨덴",
+    "nameEn": "Sweden",
+    "code": 46,
+    "iso": "SE",
+    "flag": "🇸🇪",
+    "stripLeadingZero": true,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "스위스",
+    "nameEn": "Switzerland",
+    "code": 41,
+    "iso": "CH",
+    "flag": "🇨🇭",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "스페인",
+    "nameEn": "Spain",
+    "code": 34,
+    "iso": "ES",
+    "flag": "🇪🇸",
+    "stripLeadingZero": false,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "슬로바키아",
+    "nameEn": "Slovakia",
+    "code": 421,
+    "iso": "SK",
+    "flag": "🇸🇰",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "슬로베니아",
+    "nameEn": "Slovenia",
+    "code": 386,
+    "iso": "SI",
+    "flag": "🇸🇮",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "시리아",
+    "nameEn": "Syria",
+    "code": 963,
+    "iso": "SY",
+    "flag": "🇸🇾",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "시에라리온",
+    "nameEn": "Sierra Leone",
+    "code": 232,
+    "iso": "SL",
+    "flag": "🇸🇱",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "신트마르턴",
+    "nameEn": "Sint Maarten",
+    "code": 1,
+    "iso": "SX",
+    "flag": "🇸🇽",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "싱가포르",
+    "nameEn": "Singapore",
+    "code": 65,
+    "iso": "SG",
+    "flag": "🇸🇬",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "아랍에미리트",
+    "nameEn": "United Arab Emirates",
+    "code": 971,
+    "iso": "AE",
+    "flag": "🇦🇪",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "아루바",
+    "nameEn": "Aruba",
+    "code": 297,
+    "iso": "AW",
+    "flag": "🇦🇼",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "아르메니아",
+    "nameEn": "Armenia",
+    "code": 374,
+    "iso": "AM",
+    "flag": "🇦🇲",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "아르헨티나",
+    "nameEn": "Argentina",
+    "code": 54,
+    "iso": "AR",
+    "flag": "🇦🇷",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 11
+  },
+  {
+    "name": "아이슬란드",
+    "nameEn": "Iceland",
+    "code": 354,
+    "iso": "IS",
+    "flag": "🇮🇸",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "아이티",
+    "nameEn": "Haiti",
+    "code": 509,
+    "iso": "HT",
+    "flag": "🇭🇹",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "아일랜드",
+    "nameEn": "Ireland",
+    "code": 353,
+    "iso": "IE",
+    "flag": "🇮🇪",
+    "stripLeadingZero": true,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "아제르바이잔",
+    "nameEn": "Azerbaijan",
+    "code": 994,
+    "iso": "AZ",
+    "flag": "🇦🇿",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "아프가니스탄",
+    "nameEn": "Afghanistan",
+    "code": 93,
+    "iso": "AF",
+    "flag": "🇦🇫",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "안도라",
+    "nameEn": "Andorra",
+    "code": 376,
+    "iso": "AD",
+    "flag": "🇦🇩",
+    "stripLeadingZero": false,
+    "minLocalDigits": 6,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "안티구아 바부다",
+    "nameEn": "Antigua and Barbuda",
+    "code": 1,
+    "iso": "AG",
+    "flag": "🇦🇬",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "알바니아",
+    "nameEn": "Albania",
+    "code": 355,
+    "iso": "AL",
+    "flag": "🇦🇱",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "알제리",
+    "nameEn": "Algeria",
+    "code": 213,
+    "iso": "DZ",
+    "flag": "🇩🇿",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "앙골라",
+    "nameEn": "Angola",
+    "code": 244,
+    "iso": "AO",
+    "flag": "🇦🇴",
+    "stripLeadingZero": false,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "앵귈라",
+    "nameEn": "Anguilla",
+    "code": 1,
+    "iso": "AI",
+    "flag": "🇦🇮",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "에리트레아",
+    "nameEn": "Eritrea",
+    "code": 291,
+    "iso": "ER",
+    "flag": "🇪🇷",
+    "stripLeadingZero": true,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "에스토니아",
+    "nameEn": "Estonia",
+    "code": 372,
+    "iso": "EE",
+    "flag": "🇪🇪",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "에콰도르",
+    "nameEn": "Ecuador",
+    "code": 593,
+    "iso": "EC",
+    "flag": "🇪🇨",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "에티오피아",
+    "nameEn": "Ethiopia",
+    "code": 251,
+    "iso": "ET",
+    "flag": "🇪🇹",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "엘살바도르",
+    "nameEn": "El Salvador",
+    "code": 503,
+    "iso": "SV",
+    "flag": "🇸🇻",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "영국",
+    "nameEn": "United Kingdom",
+    "code": 44,
+    "iso": "GB",
+    "flag": "🇬🇧",
+    "stripLeadingZero": true,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 11
+  },
+  {
+    "name": "영국령 버진아일랜드",
+    "nameEn": "British Virgin Islands",
+    "code": 1,
+    "iso": "VG",
+    "flag": "🇻🇬",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "영국령 인도양 지역",
+    "nameEn": "British Indian Ocean Territory",
+    "code": 246,
+    "iso": "IO",
+    "flag": "🇮🇴",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "예멘",
+    "nameEn": "Yemen",
+    "code": 967,
+    "iso": "YE",
+    "flag": "🇾🇪",
+    "stripLeadingZero": true,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "오만",
+    "nameEn": "Oman",
+    "code": 968,
+    "iso": "OM",
+    "flag": "🇴🇲",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "오스트리아",
+    "nameEn": "Austria",
+    "code": 43,
+    "iso": "AT",
+    "flag": "🇦🇹",
+    "stripLeadingZero": true,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 13
+  },
+  {
+    "name": "온두라스",
+    "nameEn": "Honduras",
+    "code": 504,
+    "iso": "HN",
+    "flag": "🇭🇳",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "올란드 제도",
+    "nameEn": "Aland Islands",
+    "code": 358,
+    "iso": "AX",
+    "flag": "🇦🇽",
+    "stripLeadingZero": true,
+    "minLocalDigits": 6,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "왈리스 푸투나",
+    "nameEn": "Wallis and Futuna",
+    "code": 681,
+    "iso": "WF",
+    "flag": "🇼🇫",
+    "stripLeadingZero": false,
+    "minLocalDigits": 6,
+    "maxLocalDigits": 6
+  },
+  {
+    "name": "요르단",
+    "nameEn": "Jordan",
+    "code": 962,
+    "iso": "JO",
+    "flag": "🇯🇴",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "우간다",
+    "nameEn": "Uganda",
+    "code": 256,
+    "iso": "UG",
+    "flag": "🇺🇬",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "우루과이",
+    "nameEn": "Uruguay",
+    "code": 598,
+    "iso": "UY",
+    "flag": "🇺🇾",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "우즈베키스탄",
+    "nameEn": "Uzbekistan",
+    "code": 998,
+    "iso": "UZ",
+    "flag": "🇺🇿",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "우크라이나",
+    "nameEn": "Ukraine",
+    "code": 380,
+    "iso": "UA",
+    "flag": "🇺🇦",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "이라크",
+    "nameEn": "Iraq",
+    "code": 964,
+    "iso": "IQ",
+    "flag": "🇮🇶",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "이란",
+    "nameEn": "Iran",
+    "code": 98,
+    "iso": "IR",
+    "flag": "🇮🇷",
+    "stripLeadingZero": true,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 11
+  },
+  {
+    "name": "이스라엘",
+    "nameEn": "Israel",
+    "code": 972,
+    "iso": "IL",
+    "flag": "🇮🇱",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "이집트",
+    "nameEn": "Egypt",
+    "code": 20,
+    "iso": "EG",
+    "flag": "🇪🇬",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "이탈리아",
+    "nameEn": "Italy",
+    "code": 39,
+    "iso": "IT",
+    "flag": "🇮🇹",
+    "stripLeadingZero": false,
+    "minLocalDigits": 6,
+    "maxLocalDigits": 11
+  },
+  {
+    "name": "인도",
+    "nameEn": "India",
+    "code": 91,
+    "iso": "IN",
+    "flag": "🇮🇳",
+    "stripLeadingZero": true,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "인도네시아",
+    "nameEn": "Indonesia",
+    "code": 62,
+    "iso": "ID",
+    "flag": "🇮🇩",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 12
+  },
+  {
+    "name": "일본",
+    "nameEn": "Japan",
+    "code": 81,
+    "iso": "JP",
+    "flag": "🇯🇵",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 11
+  },
+  {
+    "name": "자메이카",
+    "nameEn": "Jamaica",
+    "code": 1,
+    "iso": "JM",
+    "flag": "🇯🇲",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "잠비아",
+    "nameEn": "Zambia",
+    "code": 260,
+    "iso": "ZM",
+    "flag": "🇿🇲",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "저지",
+    "nameEn": "Jersey",
+    "code": 44,
+    "iso": "JE",
+    "flag": "🇯🇪",
+    "stripLeadingZero": true,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "적도 기니",
+    "nameEn": "Equatorial Guinea",
+    "code": 240,
+    "iso": "GQ",
+    "flag": "🇬🇶",
+    "stripLeadingZero": false,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "조지아",
+    "nameEn": "Georgia",
+    "code": 995,
+    "iso": "GE",
+    "flag": "🇬🇪",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "중국",
+    "nameEn": "China",
+    "code": 86,
+    "iso": "CN",
+    "flag": "🇨🇳",
+    "stripLeadingZero": false,
+    "minLocalDigits": 11,
+    "maxLocalDigits": 11
+  },
+  {
+    "name": "중앙아프리카 공화국",
+    "nameEn": "Central African Republic",
+    "code": 236,
+    "iso": "CF",
+    "flag": "🇨🇫",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "지부티",
+    "nameEn": "Djibouti",
+    "code": 253,
+    "iso": "DJ",
+    "flag": "🇩🇯",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "지브롤터",
+    "nameEn": "Gibraltar",
+    "code": 350,
+    "iso": "GI",
+    "flag": "🇬🇮",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "짐바브웨",
+    "nameEn": "Zimbabwe",
+    "code": 263,
+    "iso": "ZW",
+    "flag": "🇿🇼",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "차드",
+    "nameEn": "Chad",
+    "code": 235,
+    "iso": "TD",
+    "flag": "🇹🇩",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "체코",
+    "nameEn": "Czech Republic",
+    "code": 420,
+    "iso": "CZ",
+    "flag": "🇨🇿",
+    "stripLeadingZero": false,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "칠레",
+    "nameEn": "Chile",
+    "code": 56,
+    "iso": "CL",
+    "flag": "🇨🇱",
+    "stripLeadingZero": false,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "카메룬",
+    "nameEn": "Cameroon",
+    "code": 237,
+    "iso": "CM",
+    "flag": "🇨🇲",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "카보베르데",
+    "nameEn": "Cape Verde",
+    "code": 238,
+    "iso": "CV",
+    "flag": "🇨🇻",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "카자흐스탄",
+    "nameEn": "Kazakhstan",
+    "code": 7,
+    "iso": "KZ",
+    "flag": "🇰🇿",
+    "stripLeadingZero": true,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "카타르",
+    "nameEn": "Qatar",
+    "code": 974,
+    "iso": "QA",
+    "flag": "🇶🇦",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "캄보디아",
+    "nameEn": "Cambodia",
+    "code": 855,
+    "iso": "KH",
+    "flag": "🇰🇭",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "캐나다",
+    "nameEn": "Canada",
+    "code": 1,
+    "iso": "CA",
+    "flag": "🇨🇦",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "케냐",
+    "nameEn": "Kenya",
+    "code": 254,
+    "iso": "KE",
+    "flag": "🇰🇪",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "케이맨 제도",
+    "nameEn": "Cayman Islands",
+    "code": 1,
+    "iso": "KY",
+    "flag": "🇰🇾",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "코모로",
+    "nameEn": "Comoros",
+    "code": 269,
+    "iso": "KM",
+    "flag": "🇰🇲",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "코소보",
+    "nameEn": "Kosovo",
+    "code": 383,
+    "iso": "XK",
+    "flag": "🇽🇰",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "코스타리카",
+    "nameEn": "Costa Rica",
+    "code": 506,
+    "iso": "CR",
+    "flag": "🇨🇷",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "코코스 제도",
+    "nameEn": "Cocos (Keeling) Islands",
+    "code": 61,
+    "iso": "CC",
+    "flag": "🇨🇨",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "코트디부아르",
+    "nameEn": "Ivory Coast",
+    "code": 225,
+    "iso": "CI",
+    "flag": "🇨🇮",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "콜롬비아",
+    "nameEn": "Colombia",
+    "code": 57,
+    "iso": "CO",
+    "flag": "🇨🇴",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "콩고 공화국",
+    "nameEn": "Republic of the Congo",
+    "code": 242,
+    "iso": "CG",
+    "flag": "🇨🇬",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "콩고 민주 공화국",
+    "nameEn": "Democratic Republic of the Congo",
+    "code": 243,
+    "iso": "CD",
+    "flag": "🇨🇩",
+    "stripLeadingZero": true,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "쿠바",
+    "nameEn": "Cuba",
+    "code": 53,
+    "iso": "CU",
+    "flag": "🇨🇺",
+    "stripLeadingZero": true,
+    "minLocalDigits": 6,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "쿠웨이트",
+    "nameEn": "Kuwait",
+    "code": 965,
+    "iso": "KW",
+    "flag": "🇰🇼",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "쿡 제도",
+    "nameEn": "Cook Islands",
+    "code": 682,
+    "iso": "CK",
+    "flag": "🇨🇰",
+    "stripLeadingZero": false,
+    "minLocalDigits": 5,
+    "maxLocalDigits": 5
+  },
+  {
+    "name": "퀴라소",
+    "nameEn": "Curacao",
+    "code": 599,
+    "iso": "CW",
+    "flag": "🇨🇼",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "크로아티아",
+    "nameEn": "Croatia",
+    "code": 385,
+    "iso": "HR",
+    "flag": "🇭🇷",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "크리스마스섬",
+    "nameEn": "Christmas Island",
+    "code": 61,
+    "iso": "CX",
+    "flag": "🇨🇽",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "키르기스스탄",
+    "nameEn": "Kyrgyzstan",
+    "code": 996,
+    "iso": "KG",
+    "flag": "🇰🇬",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "키리바시",
+    "nameEn": "Kiribati",
+    "code": 686,
+    "iso": "KI",
+    "flag": "🇰🇮",
+    "stripLeadingZero": false,
+    "minLocalDigits": 5,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "타지키스탄",
+    "nameEn": "Tajikistan",
+    "code": 992,
+    "iso": "TJ",
+    "flag": "🇹🇯",
+    "stripLeadingZero": false,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "탄자니아",
+    "nameEn": "Tanzania",
+    "code": 255,
+    "iso": "TZ",
+    "flag": "🇹🇿",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "태국",
+    "nameEn": "Thailand",
+    "code": 66,
+    "iso": "TH",
+    "flag": "🇹🇭",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "터크스 케이커스 제도",
+    "nameEn": "Turks and Caicos Islands",
+    "code": 1,
+    "iso": "TC",
+    "flag": "🇹🇨",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "터키",
+    "nameEn": "Turkey",
+    "code": 90,
+    "iso": "TR",
+    "flag": "🇹🇷",
+    "stripLeadingZero": true,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 11
+  },
+  {
+    "name": "토고",
+    "nameEn": "Togo",
+    "code": 228,
+    "iso": "TG",
+    "flag": "🇹🇬",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "토켈라우",
+    "nameEn": "Tokelau",
+    "code": 690,
+    "iso": "TK",
+    "flag": "🇹🇰",
+    "stripLeadingZero": false,
+    "minLocalDigits": 4,
+    "maxLocalDigits": 4
+  },
+  {
+    "name": "통가",
+    "nameEn": "Tonga",
+    "code": 676,
+    "iso": "TO",
+    "flag": "🇹🇴",
+    "stripLeadingZero": false,
+    "minLocalDigits": 5,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "투르크메니스탄",
+    "nameEn": "Turkmenistan",
+    "code": 993,
+    "iso": "TM",
+    "flag": "🇹🇲",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "투발루",
+    "nameEn": "Tuvalu",
+    "code": 688,
+    "iso": "TV",
+    "flag": "🇹🇻",
+    "stripLeadingZero": false,
+    "minLocalDigits": 5,
+    "maxLocalDigits": 6
+  },
+  {
+    "name": "튀니지",
+    "nameEn": "Tunisia",
+    "code": 216,
+    "iso": "TN",
+    "flag": "🇹🇳",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "트리니다드 토바고",
+    "nameEn": "Trinidad and Tobago",
+    "code": 1,
+    "iso": "TT",
+    "flag": "🇹🇹",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "파나마",
+    "nameEn": "Panama",
+    "code": 507,
+    "iso": "PA",
+    "flag": "🇵🇦",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "파라과이",
+    "nameEn": "Paraguay",
+    "code": 595,
+    "iso": "PY",
+    "flag": "🇵🇾",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "파키스탄",
+    "nameEn": "Pakistan",
+    "code": 92,
+    "iso": "PK",
+    "flag": "🇵🇰",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 11
+  },
+  {
+    "name": "파푸아뉴기니",
+    "nameEn": "Papua New Guinea",
+    "code": 675,
+    "iso": "PG",
+    "flag": "🇵🇬",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 8
+  },
+  {
+    "name": "팔라우",
+    "nameEn": "Palau",
+    "code": 680,
+    "iso": "PW",
+    "flag": "🇵🇼",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "팔레스타인",
+    "nameEn": "Palestine",
+    "code": 970,
+    "iso": "PS",
+    "flag": "🇵🇸",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "페로 제도",
+    "nameEn": "Faroe Islands",
+    "code": 298,
+    "iso": "FO",
+    "flag": "🇫🇴",
+    "stripLeadingZero": false,
+    "minLocalDigits": 6,
+    "maxLocalDigits": 6
+  },
+  {
+    "name": "페루",
+    "nameEn": "Peru",
+    "code": 51,
+    "iso": "PE",
+    "flag": "🇵🇪",
+    "stripLeadingZero": false,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "포르투갈",
+    "nameEn": "Portugal",
+    "code": 351,
+    "iso": "PT",
+    "flag": "🇵🇹",
+    "stripLeadingZero": false,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "포클랜드 제도",
+    "nameEn": "Falkland Islands",
+    "code": 500,
+    "iso": "FK",
+    "flag": "🇫🇰",
+    "stripLeadingZero": false,
+    "minLocalDigits": 5,
+    "maxLocalDigits": 5
+  },
+  {
+    "name": "폴란드",
+    "nameEn": "Poland",
+    "code": 48,
+    "iso": "PL",
+    "flag": "🇵🇱",
+    "stripLeadingZero": false,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "푸에르토리코",
+    "nameEn": "Puerto Rico",
+    "code": 1,
+    "iso": "PR",
+    "flag": "🇵🇷",
+    "stripLeadingZero": false,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "프랑스",
+    "nameEn": "France",
+    "code": 33,
+    "iso": "FR",
+    "flag": "🇫🇷",
+    "stripLeadingZero": true,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "프랑스령 기아나",
+    "nameEn": "French Guiana",
+    "code": 594,
+    "iso": "GF",
+    "flag": "🇬🇫",
+    "stripLeadingZero": true,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "프랑스령 남부 지역",
+    "nameEn": "French Southern Territories",
+    "code": 262,
+    "iso": "TF",
+    "flag": "🇹🇫",
+    "stripLeadingZero": false,
+    "minLocalDigits": 6,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "프랑스령 폴리네시아",
+    "nameEn": "French Polynesia",
+    "code": 689,
+    "iso": "PF",
+    "flag": "🇵🇫",
+    "stripLeadingZero": false,
+    "minLocalDigits": 6,
+    "maxLocalDigits": 6
+  },
+  {
+    "name": "피지",
+    "nameEn": "Fiji",
+    "code": 679,
+    "iso": "FJ",
+    "flag": "🇫🇯",
+    "stripLeadingZero": false,
+    "minLocalDigits": 7,
+    "maxLocalDigits": 7
+  },
+  {
+    "name": "피트케언 제도",
+    "nameEn": "Pitcairn Islands",
+    "code": 64,
+    "iso": "PN",
+    "flag": "🇵🇳",
+    "stripLeadingZero": false,
+    "minLocalDigits": 6,
+    "maxLocalDigits": 12
+  },
+  {
+    "name": "핀란드",
+    "nameEn": "Finland",
+    "code": 358,
+    "iso": "FI",
+    "flag": "🇫🇮",
+    "stripLeadingZero": true,
+    "minLocalDigits": 6,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "필리핀",
+    "nameEn": "Philippines",
+    "code": 63,
+    "iso": "PH",
+    "flag": "🇵🇭",
+    "stripLeadingZero": true,
+    "minLocalDigits": 10,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "허드 맥도널드 제도",
+    "nameEn": "Heard Island and McDonald Islands",
+    "code": 672,
+    "iso": "HM",
+    "flag": "🇭🇲",
+    "stripLeadingZero": false,
+    "minLocalDigits": 6,
+    "maxLocalDigits": 12
+  },
+  {
+    "name": "헝가리",
+    "nameEn": "Hungary",
+    "code": 36,
+    "iso": "HU",
+    "flag": "🇭🇺",
+    "stripLeadingZero": true,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 9
+  },
+  {
+    "name": "호주",
+    "nameEn": "Australia",
+    "code": 61,
+    "iso": "AU",
+    "flag": "🇦🇺",
+    "stripLeadingZero": true,
+    "minLocalDigits": 9,
+    "maxLocalDigits": 10
+  },
+  {
+    "name": "홍콩",
+    "nameEn": "Hong Kong",
+    "code": 852,
+    "iso": "HK",
+    "flag": "🇭🇰",
+    "stripLeadingZero": false,
+    "minLocalDigits": 8,
+    "maxLocalDigits": 8
+  }
 ]
