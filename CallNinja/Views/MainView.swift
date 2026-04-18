@@ -1,13 +1,23 @@
 import SwiftUI
 
+enum SheetType: Identifiable {
+    case numberInput(slotIndex: Int)
+    case slotDetail(slotIndex: Int)
+
+    var id: String {
+        switch self {
+        case .numberInput(let i): return "input-\(i)"
+        case .slotDetail(let i): return "detail-\(i)"
+        }
+    }
+}
+
 struct MainView: View {
 
     @ObservedObject var slotManager: SlotManager
     @ObservedObject var countryManager: CountryManager
 
-    @State private var selectedSlotIndex: Int?
-    @State private var showNumberInput = false
-    @State private var showSlotDetail = false
+    @State private var activeSheet: SheetType?
     @State private var showCountryChange = false
 
     var body: some View {
@@ -27,32 +37,32 @@ struct MainView: View {
                     }
                 }
             }
-            .sheet(isPresented: $showNumberInput) {
-                if let index = selectedSlotIndex, let country = countryManager.selectedCountry {
-                    NumberInputView(
-                        country: country,
-                        existingPrefixes: slotManager.existingPrefixes,
-                        currentInput: slotManager.slots[index].inputNumber
-                    ) { result, inputNumber in
-                        slotManager.setSlot(index, result: result, inputNumber: inputNumber)
-                        showNumberInput = false
-                        Task { await slotManager.reloadSlot(index) }
+            .sheet(item: $activeSheet) { sheet in
+                switch sheet {
+                case .numberInput(let index):
+                    if let country = countryManager.selectedCountry {
+                        NumberInputView(
+                            country: country,
+                            existingPrefixes: slotManager.existingPrefixes,
+                            currentInput: slotManager.slots[index].inputNumber
+                        ) { result, inputNumber in
+                            slotManager.setSlot(index, result: result, inputNumber: inputNumber)
+                            activeSheet = nil
+                            Task { await slotManager.reloadSlot(index) }
+                        }
                     }
-                }
-            }
-            .sheet(isPresented: $showSlotDetail) {
-                if let index = selectedSlotIndex {
+                case .slotDetail(let index):
                     SlotDetailView(
                         slot: slotManager.slots[index],
                         onDelete: {
                             slotManager.clearSlot(index)
-                            showSlotDetail = false
+                            activeSheet = nil
                             Task { await slotManager.reloadSlot(index) }
                         },
                         onChange: {
-                            showSlotDetail = false
+                            activeSheet = nil
                             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                                showNumberInput = true
+                                activeSheet = .numberInput(slotIndex: index)
                             }
                         }
                     )
@@ -102,11 +112,10 @@ struct MainView: View {
                     error: slotManager.slotErrors[slot.id],
                     isReloading: slotManager.reloadingSlot == slot.id,
                     onTap: {
-                        selectedSlotIndex = slot.id
                         if slot.isEmpty {
-                            showNumberInput = true
+                            activeSheet = .numberInput(slotIndex: slot.id)
                         } else {
-                            showSlotDetail = true
+                            activeSheet = .slotDetail(slotIndex: slot.id)
                         }
                     },
                     onToggle: {
