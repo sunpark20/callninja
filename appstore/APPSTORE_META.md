@@ -15,51 +15,78 @@
 ## App Store 설명 (한국어)
 
 ```
-스팸 번호 하나만 입력하세요.
-같은 패턴의 100만 개 번호를 시스템 레벨에서 차단합니다.
-벨이 울리기 전에 막으므로, 전화가 아예 울리지 않습니다.
+070-7737-4896, 070-7738-0792, 070-7749-8029…
+뒷자리만 바꿔가며 끊임없이 오는 스팸 전화,
+하나씩 차단해도 소용없었죠?
+
+콜닌자는 번호 범위를 통째로 차단합니다.
+070-77XX-XXXX — 이 패턴 안의 100만 개 번호를 한 번에 막습니다.
+
+다른 차단 앱과 다릅니다.
+다른 앱은 "스팸 의심" 알림을 띄우지만, 전화벨은 울립니다.
+콜닌자는 iOS 시스템 레벨에서 원천 차단합니다.
+벨소리가 울리지 않습니다. 전화가 아예 도달하지 않습니다.
 
 [사용 방법]
 1. 나라를 선택합니다 (최초 1회)
 2. 설정에서 10개 항목을 켭니다 (최초 1회)
 3. 스팸 전화에서 본 번호를 그대로 입력합니다
-4. 해당 패턴이 자동으로 차단됩니다
+4. 해당 범위가 자동으로 차단됩니다
 
-예) 070-8582-4444 입력 → 070-85XX-XXXX 패턴 100만 개 차단
+예) 070-7737-4540 입력
+→ 070-77XX-XXXX 범위 100만 개 번호 즉시 차단
+→ 뒷자리를 아무리 바꿔도 전부 차단됩니다
 
-[특징]
-• 최대 10개 패턴, 총 1,000만 개 번호 차단 가능
+[핵심 특징]
+• 범위 차단: 뒷자리를 바꿔가며 오는 스팸을 한 번에 차단
+• 원천 차단: 벨소리가 울리기 전에 시스템 레벨에서 차단
+• 최대 10개 범위, 총 1,000만 개 번호 차단 가능
 • 번호 입력 후 약 12초면 차단 완료
 • 이후 별도 조작 없이 영구 동작
-• 연락처에 저장된 번호는 정상 수신
-• 카카오톡, FaceTime 등 인터넷 전화에는 영향 없음
-• 모든 나라의 전화번호 형식 지원 (249개국)
+
+[안심하세요]
+• 연락처에 저장된 번호는 차단되지 않습니다
+• 카카오톡, FaceTime 등 인터넷 전화에는 영향 없습니다
 • 개인정보 수집 없음, 네트워크 통신 없음
+• 249개국 전화번호 형식 지원
 ```
 
 ## App Store 설명 (영어)
 
 ```
-Enter just one spam number.
-CallNinja blocks 1 million numbers matching that pattern at the iOS system level.
-Calls are blocked before they ring — your phone stays silent.
+Spammers change the last few digits and call again.
+Blocking them one by one doesn't work.
+
+CallNinja blocks an entire number range at once.
+070-77XX-XXXX — 1 million numbers in this range, blocked instantly.
+
+Unlike other call-blocking apps:
+Other apps show a "suspected spam" popup, but your phone still rings.
+CallNinja blocks calls at the iOS system level.
+Your phone doesn't ring. The call never reaches you.
 
 [How to use]
 1. Select your country (one time)
 2. Enable 10 items in Settings (one time)
 3. Enter the spam number exactly as you received it
-4. The matching pattern is automatically blocked
+4. The matching range is automatically blocked
 
-Example: Enter 070-8582-4444 → Blocks all 070-85XX-XXXX (1,000,000 numbers)
+Example: Enter 070-7737-4540
+→ Blocks all 070-77XX-XXXX (1,000,000 numbers)
+→ No matter what last digits they use, all blocked.
 
-[Features]
-• Up to 10 patterns, 10 million numbers total
-• Blocking completes in ~12 seconds per pattern
+[Key Features]
+• Range blocking: Block all spam variants at once
+• True blocking: Calls stopped at system level, before ringing
+• Up to 10 ranges, 10 million numbers total
+• Blocking completes in ~12 seconds
 • Permanent — works without the app running
-• Numbers saved in Contacts are never blocked
-• Does not affect KakaoTalk, FaceTime, or VoIP apps
-• Supports phone formats for 249 countries
+
+[Don't worry]
+• Numbers in your Contacts are never blocked
+• Does not affect FaceTime, WhatsApp, or VoIP apps
 • No data collection, no network communication
+• Supports 249 countries
 ```
 
 ---
