@@ -1,0 +1,16 @@
+# Xcode (xcodegen이 project.yml에서 생성)
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+DerivedData/
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+Packages/
+
+# OS
+.DS_Store

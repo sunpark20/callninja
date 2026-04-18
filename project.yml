@@ -1,0 +1,215 @@
+name: CallNinja
+options:
+  bundleIdPrefix: com.callninja
+  deploymentTarget:
+    iOS: "16.0"
+
+settings:
+  base:
+    DEVELOPMENT_TEAM: GA2LMK5XL2
+    CODE_SIGN_STYLE: Automatic
+    SWIFT_VERSION: "5.0"
+
+targets:
+  CallNinja:
+    type: application
+    platform: iOS
+    sources:
+      - CallNinja
+    info:
+      path: CallNinja/Info.plist
+      properties:
+        CFBundleDisplayName: "콜닌자"
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.callninja.app
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        CODE_SIGN_ENTITLEMENTS: CallNinja/CallNinja.entitlements
+    scheme:
+      testTargets: []
+      gatherCoverageData: false
+    dependencies:
+      - target: NinjaBlock00
+      - target: NinjaBlock01
+      - target: NinjaBlock02
+      - target: NinjaBlock03
+      - target: NinjaBlock04
+      - target: NinjaBlock05
+      - target: NinjaBlock06
+      - target: NinjaBlock07
+      - target: NinjaBlock08
+      - target: NinjaBlock09
+
+  NinjaBlock00:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: NinjaBlockBase
+    info:
+      path: NinjaBlock00/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "콜닌자 슬롯 1"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.callninja.app.NinjaBlock00
+        CODE_SIGN_ENTITLEMENTS: NinjaBlock.entitlements
+
+  NinjaBlock01:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: NinjaBlockBase
+    info:
+      path: NinjaBlock01/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "콜닌자 슬롯 2"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.callninja.app.NinjaBlock01
+        CODE_SIGN_ENTITLEMENTS: NinjaBlock.entitlements
+
+  NinjaBlock02:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: NinjaBlockBase
+    info:
+      path: NinjaBlock02/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "콜닌자 슬롯 3"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.callninja.app.NinjaBlock02
+        CODE_SIGN_ENTITLEMENTS: NinjaBlock.entitlements
+
+  NinjaBlock03:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: NinjaBlockBase
+    info:
+      path: NinjaBlock03/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "콜닌자 슬롯 4"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.callninja.app.NinjaBlock03
+        CODE_SIGN_ENTITLEMENTS: NinjaBlock.entitlements
+
+  NinjaBlock04:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: NinjaBlockBase
+    info:
+      path: NinjaBlock04/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "콜닌자 슬롯 5"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.callninja.app.NinjaBlock04
+        CODE_SIGN_ENTITLEMENTS: NinjaBlock.entitlements
+
+  NinjaBlock05:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: NinjaBlockBase
+    info:
+      path: NinjaBlock05/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "콜닌자 슬롯 6"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.callninja.app.NinjaBlock05
+        CODE_SIGN_ENTITLEMENTS: NinjaBlock.entitlements
+
+  NinjaBlock06:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: NinjaBlockBase
+    info:
+      path: NinjaBlock06/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "콜닌자 슬롯 7"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.callninja.app.NinjaBlock06
+        CODE_SIGN_ENTITLEMENTS: NinjaBlock.entitlements
+
+  NinjaBlock07:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: NinjaBlockBase
+    info:
+      path: NinjaBlock07/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "콜닌자 슬롯 8"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.callninja.app.NinjaBlock07
+        CODE_SIGN_ENTITLEMENTS: NinjaBlock.entitlements
+
+  NinjaBlock08:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: NinjaBlockBase
+    info:
+      path: NinjaBlock08/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "콜닌자 슬롯 9"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.callninja.app.NinjaBlock08
+        CODE_SIGN_ENTITLEMENTS: NinjaBlock.entitlements
+
+  NinjaBlock09:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: NinjaBlockBase
+    info:
+      path: NinjaBlock09/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.callkit.call-directory
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
+        CFBundleDisplayName: "콜닌자 슬롯 10"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.callninja.app.NinjaBlock09
+        CODE_SIGN_ENTITLEMENTS: NinjaBlock.entitlements
