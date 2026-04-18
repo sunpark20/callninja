@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <defs>
+    <linearGradient id="lbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#151517"></stop><stop offset="1" stop-color="#050506"></stop></linearGradient>
+    <linearGradient id="lblade" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF6680"></stop><stop offset="1" stop-color="#C8324A"></stop></linearGradient>
+  </defs>
+  <rect x="8" y="8" width="64" height="64" rx="16" fill="url(#lbg)"></rect>
+  <g transform="translate(40 40)">
+    <path d="M0 -25 L7 -7 L25 0 L7 7 L0 25 L-7 7 L-25 0 L-7 -7 Z" fill="url(#lblade)"></path>
+    <circle r="10.9" fill="#050506"></circle>
+    <g transform="rotate(10) scale(1.3)">
+      <image href="phone-handset.png" x="-8" y="-8" width="16" height="16" preserveAspectRatio="xMidYMid meet"></image>
+    </g>
+  </g>
+  <text x="90" y="48" font-family="Inter, -apple-system, &#39;SF Pro&#39;, sans-serif" font-weight="700" font-size="32" fill="#0A0A0B" letter-spacing="-0.6">CallNinja</text>
+  <text x="91" y="66" font-family="Inter, -apple-system, &#39;SF Pro&#39;, sans-serif" font-weight="600" font-size="12" fill="#E4455E" letter-spacing="2">콜닌자</text>
+</svg>

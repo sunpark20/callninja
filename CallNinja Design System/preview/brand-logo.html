@@ -1,0 +1,141 @@
+<!doctype html><html><head><meta charset="utf-8"/>
+<link rel="stylesheet" href="../colors_and_type.css"/>
+<style>
+  body{margin:0;padding:22px;background:#F2F2F7;font-family:var(--font-sans);display:flex;gap:18px;align-items:center;justify-content:center;min-height:320px}
+  .card{background:#fff;border-radius:18px;padding:20px;display:flex;flex-direction:column;align-items:center;gap:12px;border:1px solid rgba(0,0,0,.06)}
+  .lab{font-family:var(--font-mono);font-size:10.5px;color:rgba(60,60,67,.6);text-transform:uppercase;letter-spacing:.6px}
+
+  /* Tweaks panel */
+  #tweaks{position:fixed;right:16px;bottom:16px;width:260px;background:#0F0F12;color:#F5F5F7;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:14px 16px;font-family:var(--font-sans);font-size:12.5px;box-shadow:0 10px 40px rgba(0,0,0,.3);display:none;z-index:1000}
+  #tweaks.on{display:block}
+  #tweaks h3{margin:0 0 10px;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,.55);font-weight:600}
+  #tweaks .row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:8px 0}
+  #tweaks label{color:rgba(255,255,255,.85)}
+  #tweaks input[type=range]{flex:1;accent-color:#E4455E}
+  #tweaks .val{font-family:var(--font-mono);font-size:11px;color:#E4455E;min-width:42px;text-align:right}
+</style></head><body>
+
+<div class="card">
+  <svg id="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="140" height="140">
+    <defs>
+      <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#151517"/>
+        <stop offset="1" stop-color="#050506"/>
+      </linearGradient>
+      <linearGradient id="blade" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#FF6680"/>
+        <stop offset="1" stop-color="#C8324A"/>
+      </linearGradient>
+    </defs>
+    <rect width="200" height="200" rx="44" fill="url(#bg)"/>
+    <g transform="translate(100 100)">
+      <path d="M0 -78 L22 -22 L78 0 L22 22 L0 78 L-22 22 L-78 0 L-22 -22 Z" fill="url(#blade)"/>
+      <circle r="34" fill="#050506"/>
+      <g id="icon-phone">
+        <image href="../assets/phone-handset.png" x="-25" y="-25" width="50" height="50" preserveAspectRatio="xMidYMid meet"/>
+      </g>
+    </g>
+  </svg>
+  <div class="lab">app icon · 1024 ready</div>
+</div>
+
+<div class="card">
+  <svg id="lockup-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="280" height="70">
+    <defs>
+      <linearGradient id="lbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#151517"/><stop offset="1" stop-color="#050506"/></linearGradient>
+      <linearGradient id="lblade" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF6680"/><stop offset="1" stop-color="#C8324A"/></linearGradient>
+    </defs>
+    <rect x="8" y="8" width="64" height="64" rx="16" fill="url(#lbg)"/>
+    <g transform="translate(40 40)">
+      <path d="M0 -25 L7 -7 L25 0 L7 7 L0 25 L-7 7 L-25 0 L-7 -7 Z" fill="url(#lblade)"/>
+      <circle r="10.9" fill="#050506"/>
+      <g id="lockup-phone">
+        <image href="../assets/phone-handset.png" x="-8" y="-8" width="16" height="16" preserveAspectRatio="xMidYMid meet"/>
+      </g>
+    </g>
+    <text x="90" y="48" font-family="Inter, -apple-system, 'SF Pro', sans-serif" font-weight="700" font-size="32" fill="#0A0A0B" letter-spacing="-0.6">CallNinja</text>
+    <text x="91" y="66" font-family="Inter, -apple-system, 'SF Pro', sans-serif" font-weight="600" font-size="12" fill="#E4455E" letter-spacing="2">콜닌자</text>
+  </svg>
+  <div class="lab">horizontal lockup</div>
+</div>
+
+<!-- Tweaks panel -->
+<div id="tweaks">
+  <h3>Tweaks · Phone</h3>
+  <div style="font-size:10px;color:rgba(255,255,255,.45);letter-spacing:.8px;text-transform:uppercase;margin:4px 0 2px">App icon</div>
+  <div class="row">
+    <label>Rotation</label>
+    <input type="range" id="appRot" min="-180" max="180" step="5"/>
+    <div class="val" id="appRotVal"></div>
+  </div>
+  <div class="row">
+    <label>Size</label>
+    <input type="range" id="appScale" min="0.5" max="1.6" step="0.05"/>
+    <div class="val" id="appScaleVal"></div>
+  </div>
+  <div style="font-size:10px;color:rgba(255,255,255,.45);letter-spacing:.8px;text-transform:uppercase;margin:10px 0 2px">Lockup</div>
+  <div class="row">
+    <label>Rotation</label>
+    <input type="range" id="lockRot" min="-180" max="180" step="5"/>
+    <div class="val" id="lockRotVal"></div>
+  </div>
+  <div class="row">
+    <label>Size</label>
+    <input type="range" id="lockScale" min="0.5" max="1.6" step="0.05"/>
+    <div class="val" id="lockScaleVal"></div>
+  </div>
+</div>
+
+<script>
+  const TWEAK_DEFAULS = /*EDITMODE-BEGIN*/{
+    "appPhoneRotation": 10,
+    "appPhoneScale": 1.3,
+    "lockupPhoneRotation": 10,
+    "lockupPhoneScale": 1.3
+  }/*EDITMODE-END*/;
+
+  const state = { ...TWEAK_DEFAULS };
+
+  function apply() {
+    document.getElementById('icon-phone').setAttribute('transform', `rotate(${state.appPhoneRotation}) scale(${state.appPhoneScale})`);
+    document.getElementById('lockup-phone').setAttribute('transform', `rotate(${state.lockupPhoneRotation}) scale(${state.lockupPhoneScale})`);
+    const setR = (id, v) => { const el = document.getElementById(id); if (el) el.value = v; };
+    const setT = (id, t) => { const el = document.getElementById(id); if (el) el.textContent = t; };
+    setR('appRot', state.appPhoneRotation);   setT('appRotVal', state.appPhoneRotation + '°');
+    setR('appScale', state.appPhoneScale);    setT('appScaleVal', Number(state.appPhoneScale).toFixed(2) + '×');
+    setR('lockRot', state.lockupPhoneRotation); setT('lockRotVal', state.lockupPhoneRotation + '°');
+    setR('lockScale', state.lockupPhoneScale);  setT('lockScaleVal', Number(state.lockupPhoneScale).toFixed(2) + '×');
+  }
+  apply();
+
+  // --- Tweaks protocol ---
+  window.addEventListener('message', (e) => {
+    const d = e.data || {};
+    if (d.type === '__activate_edit_mode') document.getElementById('tweaks').classList.add('on');
+    else if (d.type === '__deactivate_edit_mode') document.getElementById('tweaks').classList.remove('on');
+  });
+  try { window.parent.postMessage({ type: '__edit_mode_available' }, '*'); } catch(_) {}
+
+  function persist(edits) {
+    try { window.parent.postMessage({ type: '__edit_mode_set_keys', edits }, '*'); } catch(_){}
+  }
+
+  document.getElementById('appRot').addEventListener('input', (e) => {
+    state.appPhoneRotation = +e.target.value;
+    apply(); persist({ appPhoneRotation: state.appPhoneRotation });
+  });
+  document.getElementById('appScale').addEventListener('input', (e) => {
+    state.appPhoneScale = +e.target.value;
+    apply(); persist({ appPhoneScale: state.appPhoneScale });
+  });
+  document.getElementById('lockRot').addEventListener('input', (e) => {
+    state.lockupPhoneRotation = +e.target.value;
+    apply(); persist({ lockupPhoneRotation: state.lockupPhoneRotation });
+  });
+  document.getElementById('lockScale').addEventListener('input', (e) => {
+    state.lockupPhoneScale = +e.target.value;
+    apply(); persist({ lockupPhoneScale: state.lockupPhoneScale });
+  });
+</script>
+
+</body></html>

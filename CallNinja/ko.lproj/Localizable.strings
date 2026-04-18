@@ -7,6 +7,7 @@
 "onboarding.enableExtensions" = "설정에서 10개 항목을 켜주세요";
 "onboarding.settingsPath.ios18" = "설정 > 앱 > 전화 > 차단 및 발신자 확인";
 "onboarding.settingsPath.legacy" = "설정 > 전화 > 차단 및 발신자 확인";
+"onboarding.settingsPath.ipad" = "설정 > 앱 > 콜닌자에서 10개 항목을 켜주세요";
 "onboarding.openSettings" = "설정 열기";
 "onboarding.start" = "시작하기";
 "onboarding.activated" = "활성화";

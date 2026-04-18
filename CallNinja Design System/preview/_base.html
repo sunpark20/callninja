@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Card</title>
+<link rel="stylesheet" href="../colors_and_type.css"/>
+<style>
+  html, body { margin: 0; padding: 0; }
+  body {
+    padding: 20px 22px;
+    display: flex; flex-direction: column; gap: 14px;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: stretch; }
+  .swatch {
+    width: 132px; border-radius: 10px; overflow: hidden;
+    border: 1px solid var(--separator);
+    background: var(--bg-surface);
+    display: flex; flex-direction: column;
+  }
+  .swatch .chip { height: 56px; }
+  .swatch .meta { padding: 8px 10px; }
+  .swatch .name { font-size: 12px; font-weight: 600; color: var(--fg-primary); }
+  .swatch .hex  { font-family: var(--font-mono); font-size: 11px; color: var(--fg-secondary); margin-top: 2px; }
+  .group-title { font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--fg-secondary); font-weight: 600; margin: 0; }
+  .mono { font-family: var(--font-mono); }
+  .pill {
+    display: inline-flex; align-items: center; padding: 3px 10px;
+    font-size: 11px; font-family: var(--font-mono); border-radius: 999px;
+    background: var(--bg-input); color: var(--fg-secondary);
+  }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .side { border-radius: 12px; overflow: hidden; }
+  .side .label {
+    padding: 6px 10px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px;
+    font-weight: 600;
+    color: var(--fg-secondary);
+    background: transparent;
+    border-bottom: 1px solid var(--separator);
+  }
+  .side .body { padding: 14px; background: var(--bg-grouped); min-height: 80px; }
+  .side[data-theme="dark"] .body { background: var(--bg-grouped); }
+</style>
+</head>
+<body>
+</body>
+</html>

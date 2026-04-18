@@ -110,7 +110,11 @@ struct OnboardingView: View {
                     Text("onboarding.enableExtensions")
                         .font(.headline)
 
-                    if #available(iOS 18, *) {
+                    if UIDevice.current.userInterfaceIdiom == .pad {
+                        Text("onboarding.settingsPath.ipad")
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                    } else if #available(iOS 18, *) {
                         Text("onboarding.settingsPath.ios18")
                             .font(.subheadline)
                             .foregroundStyle(.secondary)
@@ -159,14 +163,24 @@ struct OnboardingView: View {
     }
 
     private func openCallBlockingSettings() {
-        let candidates = [
-            "App-prefs:com.apple.mobilephone&path=CALL_BLOCKING_AND_IDENTIFICATION",
-            "App-prefs:com.apple.mobilephone",
-            "prefs:root=Apps&path=com.apple.mobilephone",
-            "App-prefs:Phone&path=CALL_BLOCKING_AND_IDENTIFICATION",
-            "App-prefs:Phone",
-            "prefs:root=Phone",
-        ]
+        let candidates: [String]
+
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            candidates = [
+                "App-prefs:com.callninja.app",
+                "App-prefs:",
+            ]
+        } else {
+            candidates = [
+                "App-prefs:com.apple.mobilephone&path=CALL_BLOCKING_AND_IDENTIFICATION",
+                "App-prefs:com.apple.mobilephone",
+                "prefs:root=Apps&path=com.apple.mobilephone",
+                "App-prefs:Phone&path=CALL_BLOCKING_AND_IDENTIFICATION",
+                "App-prefs:Phone",
+                "prefs:root=Phone",
+            ]
+        }
+
         for urlString in candidates {
             if let url = URL(string: urlString) {
                 UIApplication.shared.open(url) { success in

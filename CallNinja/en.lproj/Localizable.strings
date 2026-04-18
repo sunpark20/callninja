@@ -7,6 +7,7 @@
 "onboarding.enableExtensions" = "Enable 10 items in Settings";
 "onboarding.settingsPath.ios18" = "Settings > Apps > Phone > Call Blocking & Identification";
 "onboarding.settingsPath.legacy" = "Settings > Phone > Call Blocking & Identification";
+"onboarding.settingsPath.ipad" = "Settings > Apps > CallNinja — enable 10 items";
 "onboarding.openSettings" = "Open Settings";
 "onboarding.start" = "Get Started";
 "onboarding.activated" = "activated";

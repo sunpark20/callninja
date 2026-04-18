@@ -1,0 +1,161 @@
+/* ==========================================================================
+   CallNinja Design System — Colors & Type
+   System-first iOS tokens. Dark mode via prefers-color-scheme.
+   ========================================================================== */
+
+/* ---------- Fonts ---------- */
+/* Real app uses SF Pro + SF Mono (system). Web fallback: Inter + JetBrains Mono. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+  /* ===== Brand ===== */
+  --brand-pink:        #E4455E;  /* Paradise Pink — Pantone 17-1755 TCX */
+  --brand-pink-hover:  #D13A52;
+  --brand-pink-tint:   rgba(228, 69, 94, 0.12);
+  --hero-green:        #34C759;  /* iOS system green */
+  --hero-green-tint:   rgba(52, 199, 89, 0.10);
+
+  /* ===== Light-mode semantic ===== */
+  --bg-grouped:        #F2F2F7;  /* systemGroupedBackground */
+  --bg-surface:        #FFFFFF;  /* secondarySystemGroupedBackground (cards) */
+  --bg-elevated:       #FFFFFF;
+  --bg-input:          #E5E5EA;  /* systemGray5 — text-field fill */
+
+  --fg-primary:        #000000;
+  --fg-secondary:      rgba(60, 60, 67, 0.60);
+  --fg-tertiary:       rgba(60, 60, 67, 0.30);
+  --fg-on-accent:      #FFFFFF;
+
+  --separator:         rgba(60, 60, 67, 0.18);
+  --separator-opaque:  #C6C6C8;
+
+  --accent:            var(--brand-pink);
+  --accent-fg:         #FFFFFF;
+  --success:           #34C759;
+  --warning:           #FF9F0A;
+  --danger:            #FF3B30;
+  --info:              #0A84FF;
+
+  /* ===== Type scale (rem-based, iOS semantic mirror) ===== */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  --fs-largeTitle:  34px; --lh-largeTitle: 41px; --fw-largeTitle: 700;
+  --fs-title1:      28px; --lh-title1:     34px; --fw-title1:     700;
+  --fs-title2:      22px; --lh-title2:     28px; --fw-title2:     700;
+  --fs-title3:      20px; --lh-title3:     25px; --fw-title3:     600;
+  --fs-headline:    17px; --lh-headline:   22px; --fw-headline:   600;
+  --fs-body:        17px; --lh-body:       22px; --fw-body:       400;
+  --fs-callout:     16px; --lh-callout:    21px; --fw-callout:    400;
+  --fs-subheadline: 15px; --lh-subheadline:20px; --fw-subheadline:400;
+  --fs-footnote:    13px; --lh-footnote:   18px; --fw-footnote:   400;
+  --fs-caption1:    12px; --lh-caption1:   16px; --fw-caption1:   400;
+  --fs-caption2:    11px; --lh-caption2:   13px; --fw-caption2:   400;
+
+  /* ===== Radii ===== */
+  --radius-sm:  8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;  /* cards, buttons, sheets */
+  --radius-xl: 16px;
+
+  /* ===== Spacing (8pt grid) ===== */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+
+  /* ===== Elevation (we use almost none — tokens exist for completeness) ===== */
+  --shadow-sheet: 0 -2px 10px rgba(0,0,0,0.04);
+  --shadow-card:  0 1px 2px rgba(0,0,0,0.04);
+}
+
+/* ---------- Dark mode ---------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-grouped:        #000000;  /* OLED pure black */
+    --bg-surface:        #1C1C1E;  /* secondarySystemGroupedBackground dark */
+    --bg-elevated:       #2C2C2E;
+    --bg-input:          #2C2C2E;
+
+    --fg-primary:        #FFFFFF;
+    --fg-secondary:      rgba(235, 235, 245, 0.60);
+    --fg-tertiary:       rgba(235, 235, 245, 0.30);
+
+    --separator:         rgba(84, 84, 88, 0.60);
+    --separator-opaque:  #38383A;
+
+    --accent:            #EB6478;  /* lifted Paradise Pink for dark */
+    --brand-pink-tint:   rgba(235, 100, 120, 0.16);
+    --hero-green:        #30D158;
+    --hero-green-tint:   rgba(48, 209, 88, 0.18);
+    --warning:           #FF9F0A;
+    --danger:            #FF453A;
+    --info:              #0A84FF;
+
+    --shadow-card:       0 1px 2px rgba(0,0,0,0.5);
+  }
+}
+
+/* Explicit theme override classes (for preview cards that force a mode) */
+[data-theme="light"] {
+  --bg-grouped: #F2F2F7; --bg-surface: #FFFFFF; --bg-elevated: #FFFFFF; --bg-input: #E5E5EA;
+  --fg-primary: #000000; --fg-secondary: rgba(60,60,67,0.60); --fg-tertiary: rgba(60,60,67,0.30);
+  --separator: rgba(60,60,67,0.18); --separator-opaque: #C6C6C8;
+  --accent: #E4455E; --brand-pink-tint: rgba(228,69,94,0.12);
+  --hero-green: #34C759; --hero-green-tint: rgba(52,199,89,0.10);
+  --danger: #FF3B30;
+}
+[data-theme="dark"] {
+  --bg-grouped: #000000; --bg-surface: #1C1C1E; --bg-elevated: #2C2C2E; --bg-input: #2C2C2E;
+  --fg-primary: #FFFFFF; --fg-secondary: rgba(235,235,245,0.60); --fg-tertiary: rgba(235,235,245,0.30);
+  --separator: rgba(84,84,88,0.60); --separator-opaque: #38383A;
+  --accent: #EB6478; --brand-pink-tint: rgba(235,100,120,0.16);
+  --hero-green: #30D158; --hero-green-tint: rgba(48,209,88,0.18);
+  --danger: #FF453A;
+}
+
+/* ---------- Base type ---------- */
+html, body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--fg-primary);
+  background: var(--bg-grouped);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------- Semantic text roles ---------- */
+.ds-largeTitle  { font-size: var(--fs-largeTitle);  line-height: var(--lh-largeTitle);  font-weight: var(--fw-largeTitle);  letter-spacing: 0.37px; }
+.ds-title1      { font-size: var(--fs-title1);      line-height: var(--lh-title1);      font-weight: var(--fw-title1);      letter-spacing: 0.36px; }
+.ds-title2      { font-size: var(--fs-title2);      line-height: var(--lh-title2);      font-weight: var(--fw-title2);      letter-spacing: 0.35px; }
+.ds-title3      { font-size: var(--fs-title3);      line-height: var(--lh-title3);      font-weight: var(--fw-title3); }
+.ds-headline    { font-size: var(--fs-headline);    line-height: var(--lh-headline);    font-weight: var(--fw-headline); }
+.ds-body        { font-size: var(--fs-body);        line-height: var(--lh-body);        font-weight: var(--fw-body); }
+.ds-callout     { font-size: var(--fs-callout);     line-height: var(--lh-callout); }
+.ds-subheadline { font-size: var(--fs-subheadline); line-height: var(--lh-subheadline); }
+.ds-footnote    { font-size: var(--fs-footnote);    line-height: var(--lh-footnote); }
+.ds-caption     { font-size: var(--fs-caption1);    line-height: var(--lh-caption1); }
+.ds-caption2    { font-size: var(--fs-caption2);    line-height: var(--lh-caption2); }
+
+.ds-mono     { font-family: var(--font-mono); font-feature-settings: 'tnum', 'zero'; }
+.ds-secondary{ color: var(--fg-secondary); }
+.ds-tertiary { color: var(--fg-tertiary); }
+.ds-accent   { color: var(--accent); }
+.ds-success  { color: var(--hero-green); }
+.ds-warning  { color: var(--warning); }
+.ds-danger   { color: var(--danger); }
+
+/* Hero pattern specimen — THE one moment */
+.ds-heroPattern {
+  font-family: var(--font-mono);
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 700;
+  color: var(--hero-green);
+  letter-spacing: 0.5px;
+}

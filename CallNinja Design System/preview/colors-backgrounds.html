@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8"/>
+<link rel="stylesheet" href="../colors_and_type.css"/>
+<style>
+body{margin:0;padding:22px;display:grid;grid-template-columns:1fr 1fr;gap:14px;background:#fff;font-family:var(--font-sans)}
+.panel{border-radius:14px;overflow:hidden;border:1px solid rgba(0,0,0,.08)}
+.panel .head{padding:8px 14px;font-size:10px;letter-spacing:.8px;text-transform:uppercase;font-weight:600}
+.panel[data-m="l"] .head{background:#F2F2F7;color:rgba(60,60,67,.7)}
+.panel[data-m="d"] .head{background:#000;color:rgba(235,235,245,.7)}
+.row{display:flex;gap:8px;padding:14px}
+.panel[data-m="l"] .row{background:#F2F2F7}
+.panel[data-m="d"] .row{background:#000}
+.sw{flex:1;border-radius:10px;overflow:hidden;display:flex;flex-direction:column;min-height:92px}
+.cap{padding:6px 8px;font-size:10px;font-family:var(--font-mono)}
+.panel[data-m="l"] .sw{background:#fff;color:#000}
+.panel[data-m="d"] .sw{background:#1C1C1E;color:#fff}
+.chip{flex:1}
+</style></head><body>
+<div class="panel" data-m="l"><div class="head">Light · Background</div><div class="row">
+  <div class="sw"><div class="chip" style="background:#F2F2F7"></div><div class="cap">grouped<br/>#F2F2F7</div></div>
+  <div class="sw"><div class="chip" style="background:#FFFFFF;border-bottom:1px solid #0001"></div><div class="cap">surface<br/>#FFFFFF</div></div>
+  <div class="sw"><div class="chip" style="background:#E5E5EA"></div><div class="cap">input<br/>#E5E5EA</div></div>
+</div></div>
+<div class="panel" data-m="d"><div class="head">Dark · Background</div><div class="row">
+  <div class="sw"><div class="chip" style="background:#000"></div><div class="cap">grouped<br/>#000000</div></div>
+  <div class="sw"><div class="chip" style="background:#1C1C1E"></div><div class="cap">surface<br/>#1C1C1E</div></div>
+  <div class="sw"><div class="chip" style="background:#2C2C2E"></div><div class="cap">input<br/>#2C2C2E</div></div>
+</div></div>
+</body></html>

@@ -23,11 +23,11 @@ targets:
       properties:
         CFBundleDisplayName: "CallNinja"
         UILaunchScreen: {}
+        UIRequiresFullScreen: true
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
-          - UIInterfaceOrientationPortraitUpsideDown
-          - UIInterfaceOrientationLandscapeLeft
-          - UIInterfaceOrientationLandscapeRight
+        UIDeviceFamily:
+          - 1
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.callninja.app

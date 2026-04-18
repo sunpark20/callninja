@@ -1,0 +1,19 @@
+<!doctype html><html><head><meta charset="utf-8"/>
+<link rel="stylesheet" href="../colors_and_type.css"/>
+<style>
+body{margin:0;padding:22px;background:#F2F2F7;font-family:var(--font-sans);display:flex;flex-direction:column;gap:14px}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.btn{border:0;padding:0 18px;height:44px;border-radius:12px;font-size:17px;font-weight:600;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;font-family:inherit}
+.prominent{background:#E4455E;color:#fff}
+.prominent:hover{background:#D13A52}
+.prominent:disabled{background:rgba(60,60,67,.18);color:rgba(60,60,67,.4)}
+.bordered{background:rgba(228,69,94,.12);color:#E4455E}
+.plain{background:transparent;color:#E4455E}
+.destructive{background:rgba(255,59,48,.12);color:#FF3B30}
+.lab{font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:rgba(60,60,67,.6);min-width:120px}
+</style></head><body>
+<div class="row"><span class="lab">borderedProminent</span><button class="btn prominent">다음</button><button class="btn prominent">시작하기</button><button class="btn prominent" disabled>확인</button></div>
+<div class="row"><span class="lab">bordered (tinted)</span><button class="btn bordered">설정 열기</button><button class="btn bordered">나라 선택</button></div>
+<div class="row"><span class="lab">plain</span><button class="btn plain">취소</button><button class="btn plain">닫기</button><button class="btn plain">번호 변경</button></div>
+<div class="row"><span class="lab">destructive</span><button class="btn destructive">삭제</button></div>
+</body></html>
