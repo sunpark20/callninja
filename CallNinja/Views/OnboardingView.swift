@@ -29,8 +29,7 @@ struct OnboardingView: View {
                     extensionActivationView
                 }
             }
-            .navigationTitle(String(localized: "onboarding.title"))
-            .navigationBarTitleDisplayMode(.large)
+            .toolbar(.hidden, for: .navigationBar)
         }
     }
 

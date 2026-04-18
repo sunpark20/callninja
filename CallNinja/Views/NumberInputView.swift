@@ -99,6 +99,8 @@ struct NumberInputView: View {
             .background(Color.green.opacity(0.1))
             .clipShape(RoundedRectangle(cornerRadius: 12))
             .padding(.horizontal)
+            .transition(.scale.combined(with: .opacity))
+            .animation(.spring(duration: 0.28, bounce: 0.3), value: result.prefix)
 
         case .failure(let error):
             Text(error.localizedDescription)
