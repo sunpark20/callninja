@@ -90,7 +90,7 @@ struct MainView: View {
         Section {
             if let country = countryManager.selectedCountry {
                 HStack {
-                    Text("\(country.flag) \(country.name)")
+                    Text("\(country.flag) \(country.displayName)")
                     Spacer()
                     if slotManager.enabledCount < SlotManager.slotCount {
                         Text("\(slotManager.enabledCount)/\(SlotManager.slotCount) \(String(localized: "onboarding.activated"))")

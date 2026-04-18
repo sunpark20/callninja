@@ -55,7 +55,7 @@ struct OnboardingView: View {
                         Text(country.flag)
                             .font(.largeTitle)
                         VStack(alignment: .leading) {
-                            Text(country.name)
+                            Text(country.displayName)
                                 .font(.headline)
                             Text(country.dialCode)
                                 .font(.subheadline)
@@ -200,24 +200,35 @@ struct CountryPickerView: View {
 
     var body: some View {
         NavigationStack {
-            List(filtered) { country in
-                Button {
-                    onSelect(country)
-                } label: {
-                    HStack {
-                        Text(country.flag)
-                        Text(country.name)
-                        Spacer()
-                        Text(country.dialCode)
-                            .foregroundStyle(.secondary)
-                        if country.iso == selected?.iso {
-                            Image(systemName: "checkmark")
-                                .foregroundStyle(.blue)
+            ScrollView {
+                LazyVStack(spacing: 0) {
+                    ForEach(filtered) { country in
+                        Button {
+                            onSelect(country)
+                        } label: {
+                            HStack {
+                                Text(country.flag)
+                                Text(country.displayName)
+                                Spacer()
+                                Text(country.dialCode)
+                                    .foregroundStyle(.secondary)
+                                if country.iso == selected?.iso {
+                                    Image(systemName: "checkmark")
+                                        .foregroundStyle(.blue)
+                                }
+                            }
+                            .padding(.horizontal, 16)
+                            .padding(.vertical, 12)
                         }
+                        .buttonStyle(.plain)
+                        Divider().padding(.leading, 16)
                     }
                 }
-                .buttonStyle(.plain)
+                .background(Color(.systemBackground))
+                .clipShape(RoundedRectangle(cornerRadius: 10))
+                .padding(.horizontal, 16)
             }
+            .background(Color(.systemGroupedBackground))
             .searchable(text: $searchText, prompt: Text("countryPicker.search"))
             .navigationTitle(String(localized: "countryPicker.title"))
             .navigationBarTitleDisplayMode(.inline)

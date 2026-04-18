@@ -14,6 +14,11 @@ struct CountryCode: Codable, Identifiable, Hashable {
 
     var dialCode: String { "+\(code)" }
 
+    var displayName: String {
+        let lang = Locale.current.language.languageCode?.identifier ?? "en"
+        return lang == "ko" ? name : nameEn
+    }
+
     static func loadAll() -> [CountryCode] {
         guard let url = Bundle.main.url(forResource: "country_codes", withExtension: "json"),
               let data = try? Data(contentsOf: url),

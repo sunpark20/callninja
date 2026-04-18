@@ -33,7 +33,7 @@ struct NumberInputView: View {
                         .font(.headline)
                         .multilineTextAlignment(.center)
 
-                    Text("\(country.flag) \(country.name) (\(country.dialCode))")
+                    Text("\(country.flag) \(country.displayName) (\(country.dialCode))")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                 }
