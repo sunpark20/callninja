@@ -1,0 +1,15 @@
+Range-based (last 6-digit wildcard) Spam Call Blocker
+
+Problem: No way to block an entire number range on iOS. You can only block one number at a time, but spam calls come from thousands of numbers in the same range.
+
+Comparison: Hiya and RoboKiller depend on spam databases and charge monthly. This app lets you pick the exact range yourself. It runs entirely on-device using CallKit. No subscription, no server, no tracking.
+
+Free / https://apps.apple.com/us/app/callninja-spam-call-blocker/id6762523084
+
+How it works: Enter a number, the last 6 digits become wildcards. One slot blocks 1,000,000 numbers. You get 10 slots.
+
+e.g. (212) 3XX-XXXX blocks everything from (212) 300-0000 to (212) 399-9999
+
+Contacts are never blocked.
+
+Built this for myself. Putting it out there. Feedback welcome.
